@@ -1,28 +1,27 @@
 field,display-name,dc-map
 title,Title,DC.title
-catalog-number,
-source,
+catalog-number,Catalog Number
+source,Source
 description,Description,DC.description
-coverage,Location,
-date,Date,DCTERMS.created
-functional-category,
-material,
-vessel-form,
-dimensions,
-pigment-application,
-decoration-type,
-exterior-decoration-method,
-exterior-decoration-color,
-exterior-decoration-elements,
-interior-decoration-method,
-interior-decoration-color,
-interior-decoration-elements,
-marks,
-origin,
-manufacture-range,
-publisher,
-rights,
-standardized-rights,
-preferred-image-citation,
-identifier,
-metadata-creator,
+coverage,Site Location,
+date,Site Date,
+functional-category,Functional Category
+material,Material
+vessel-form,Vessel Form
+dimensions,Artifact Dimensions
+pigment-application,Pigment Application
+decoration-type,Decoration Type
+exterior-decoration-method,Exterior Decoration Method
+exterior-decoration-color,Exteriror Decoration Color
+exterior-decoration-elements,Exterior Decoration Elements
+interior-decoration-method,Interior Decoration Method
+interior-decoration-color,Interior Decoration Color
+interior-decoration-elements,Interior Decoration Elements
+marks,Marks
+origin,Manufacture Origin
+manufacture-range,Manufacture Date Range
+publisher,Publisher
+rights,Rights
+standardized-rights,Standardized Rights
+preferred-image-citation,Preferred Image Citation
+metadata-creator,Metadata Creator
