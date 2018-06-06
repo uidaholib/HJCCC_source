@@ -1,0 +1,33 @@
+# Jekyll Digital Collection Generator
+
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+
+# Site settings
+title: Historical Japanese Ceramic Comparative Collection
+tagline: "A Collection of Japanese Ceramic Pieces, via Renae Campbell"
+description: "A Collection of Japanese Ceramic Pieces, via Renae Campbell" 
+keywords: university of idaho, HJCCC, digital collections
+email: ewilliamson@uidaho.edu
+
+# url variables
+url: https://www.lib.uidaho.edu
+baseurl: /digital/hjccc
+repo-url: https://digital.lib.uidaho.edu
+repo-collection-ids: HJCCC
+
+# Dev variables: 
+# choose metadata set, i.e. easily switch between full or dev version
+# be sure to also change page_gen data setting!
+metadata: hjccc-objects
+
+# collection display variables 
+# see _data/metadata-fields.csv
+
+# page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
+page_gen:
+  - data: 'hjccc-objects'
+    template: 'items'
+    name: 'object-id'
+    dir: 'data'
+    extension: 'html'
