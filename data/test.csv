@@ -1,0 +1,11 @@
+---
+# test
+---
+
+Source 
+
+{% include util/find-uniq-csv field="source" split-on=";" %}
+
+Material
+
+{% include util/find-uniq-csv field="material" split-on=";" %}
