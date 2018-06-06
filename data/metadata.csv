@@ -1,0 +1,8 @@
+---
+# create custom metadata csv for download
+---
+{%- assign items = site.data[site.metadata] -%}
+{%- assign fields = "title,creator,date,description,coverage,subject,latitude,longitude,type,format,donor,collection,object-id,repo-id" | split: "," -%}
+{{ fields | join: "," }}
+{% for item in items %}{% for f in fields %}"{{ item[f] }}"{% endfor %},"{{ "/data/" | absolute_url | append: item.object-id | append: ".html" }}"
+{% endfor %}

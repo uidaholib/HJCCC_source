@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{%- assign fields = site.data.metadata-fields -%}
+
+<div class="py-3">
+<div class="container py-3 rounded">
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ "/" | absolute_url }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ "/data/" | absolute_url }}">Items</a></li>
+        <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-4" >
+            <div id="item-image">
+                <img src="https://www.lib.uidaho.edu/digital/iwdl/images/sm/{{ page.resource-identifier }}.jpg" alt="pdf thumbnail" class="img-thumbnail">
+            </div>
+            <div id="item-link" class="text-center my-2">
+                <a href="https://digital.lib.uidaho.edu/utils/getfile/collection/idahowater/id/{{ page.cdm-number }}/filename/{{ page.resource-identifier }}.pdf" target="_blank" class="btn btn-primary" title="PDF download">Download PDF</a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div id="item-metadata" class="metadata">
+                <table class="table">
+
+                {% for f in fields %}{% if page[f.field] %}
+                <tr>
+                <th class="field">{{ f.display-name }}:</th>
+                <td class="field-value">
+                {% if f.field == "subject" %}{% assign sub = page[f.field] | split: ";" %}{% for s in sub %}<a href="{{ s | strip | uri_escape | prepend: "/browse/#" | absolute_url }}" >{{ s | strip }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}
+                {% elsif f.field == "collection" %}{% assign sub = page[f.field] | split: ";" %}{% for s in sub %}<a href="{{ s | strip | uri_escape | prepend: "/browse/#" | absolute_url }}" >{{ s | strip }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}
+                {% elsif f.field == "series" %}{% assign sub = page[f.field] | split: ";" %}{% for s in sub %}<a href="{{ s | strip | uri_escape | prepend: "/browse/#" | absolute_url }}" >{{ s | strip }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}
+                {% elsif f.field == "location" %}{% assign sub = page[f.field] | split: ";" %}{% for s in sub %}<a href="{{ s | strip | uri_escape | prepend: "/browse/#" | absolute_url }}" >{{ s | strip }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}
+                {% else %}{{ page[f.field] }}{% endif %}
+                </td>
+                </tr>
+                {% endif %}{% endfor %}
+                </table>
+            </div>
+        </div> 
+    </div>
+    <div class="text-center">
+        <a class="btn btn-secondary" href="{{ "/data/" | relative_url }}" role="button">&laquo; Back to data table</a>
+    </div>
+</div>
+
+</div>
+</div>

@@ -1,0 +1,17 @@
+<script type="text/javascript" language="javascript" src="{{ "/assets/datatables/datatables.min.js" | relative_url }}"></script>
+<script>
+    $(document).ready(function() {
+        $('#item-table').DataTable( {
+            ajax: { url: '{{ "/data/metadata.json" | relative_url }}', dataSrc: 'documents' },
+            columns: [ { data: 'title' }, { data: 'date' }, { data: 'subjects' }, { data: 'description' }, { data: 'link' } ],
+            columnDefs: [ 
+                { "render": function ( data, type, row ) { return '<a href="' + row.link +'">'+ data +'</a>'; },"targets": 0 },
+                { "render": function ( data, type, row ) { return data.join("; "); },"targets": 2 },
+                { "visible": false,  "targets": [ 4 ] }
+            ],
+            order: [[ 1, "desc" ]],
+            dom: 'Blfrtip', 
+            buttons: [ 'excelHtml5', 'csvHtml5' ]
+        });
+    });
+</script>
