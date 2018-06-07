@@ -1,0 +1,182 @@
+facets
+
+source,count
+"asian american comparative collection",21
+"asian american comparative collection, minidoka collection",2
+"burke museum of natural history and culture, us air force collection",27
+
+
+functional-category,count
+"food preparation",2
+"indeterminate tableware",4
+"mealtime tableware",40
+"sake tableware",4
+
+
+material,count
+"hanjiki (half porcelain)",4
+"jiki (porcelain)",41
+"sekki (vitrified stoneware)",1
+"toki (porous stoneware)",4
+
+
+vessel-form,count
+"chawan (indeterminate bowl)",4
+"dobin (teapot)",3
+"futa (lid)",2
+"gohan chawan (rice/soup bowl)",15
+"kobachi (small bowl)",1
+"kozara (small dish)",3
+"kyusu (small teapot)",1
+"mamezara (sauce dish)",1
+"namasu-zara (pickle dish/plate)",2
+"saka-bin (sake bottle)",2
+"sakazuki (indeterminate sake cup)",1
+"sara (indeterminate dish/plate)",1
+"soba choko (cold noodle cup)",1
+"suribachi (grinding bowl)",2
+"tokkuri (sake decanter)",2
+"unknown",5
+"yunomi (teacup)",3
+"zara (dish/plate)",1
+
+
+pigment-application,count
+"n/a",8
+"none",1
+"shita-etsuke (underglaze)",40
+"shita-etsuke (underglaze) and uwa-etsuke (overglaze)",1
+
+
+decoration-type,count
+"iro doban (colored transferprint)",3
+"other",14
+"seiji (winter green)",1
+"sometsuke (hand-painted cobalt)",14
+"sometsuke doban (transferprint cobalt)",10
+"sometsuke katagami (stencil cobalt)",6
+"undecorated",1
+"unknown",1
+
+
+exterior-decoration-method,count
+"doban or doban tensha (transferprinted)",12
+"doban or doban tensha (transferprinted), choka (carving)",1
+"etsuke (hand painted)",15
+"etsuke (hand painted), fukizumi (spatter stencil), indeterminate",1
+"fukizumi (spatter stencil), etsuke (hand painted), sumihajiki (ink resist)",1
+"iroyu (colored glaze)",6
+"katagami (paper stencil)",5
+"none",5
+"samehada-gusuri (shark-skin glaze)",1
+"sometsuke (hand-painted cobalt)",1
+"sometsuke (hand-painted cobalt), choka (carving)",1
+"stencil or possible stamp",1
+
+
+exterior-decoration-color,count
+"beige, white, green",1
+"black, reddish-brown",1
+"cobalt blue",30
+"cobalt blue, brown, orange",1
+"cobalt blue, green",2
+"green",1
+"green, brown",1
+"green, pink",1
+"none",7
+"red, green, yellow, cobalt blue, black",1
+"reddish-brown",2
+"seiji (winter green)",1
+"yellow, brown, green, white",1
+
+
+exterior-decoration-elements,count
+"botan (peony)",1
+"botan (peony) flower",1
+"botan (peony), tassel yoraku (rim design)",1
+"horizontal band around footring",5
+"horizontal band around footring, indeterminate",3
+"horizontal band around footring, indeterminate (possible matsu [pine] needles)",1
+"horizontal band around footring, indeterminate, written characters",1
+"horizontal band around footring, landscape",1
+"horizontal band around footring, ume (plum)",1
+"incised bands around base, indeterminate (possible botanical)",1
+"indeterminate",2
+"indeterminate (leaves and berries)",1
+"indeterminate, horizontal band around footring",1
+"karakusa (tendrils), sho chiku bai (three friends)",1
+"kiku (chrysanthemum), suzume (sparrow), tassel with chrysanthemum yoraku (rim design)",1
+"komori (bats), kumo (clouds), momo (peach), tsuru (crane)",1
+"komori (bats), sakura (cherry) blossom, suyehiro (fans)",1
+"matsu (pine) tree",1
+"none",11
+"sakura (cherry) blossom",1
+"sakura (cherry) blossom, indeterminate",1
+"seigaiha (blue sea waves diaper), botanical elements",1
+"sen (coin)",1
+"sho chiku bai (three friends)",2
+"sho chiku bai (three friends), choju (longevity)",1
+"sho chiku bai (three friends), horizontal band around footring",1
+"take (bamboo)",2
+"take (bamboo), horizontal band around rim",1
+"ume (plum) tree",1
+"yama (mountain)",1
+"yin-yo (yin-yang)",1
+
+
+interior-decoration-method,count
+"doban or doban tensha (transferprinted)",3
+"etsuke (hand painted)",3
+"iroyu (colored glaze) or possible slip",1
+"katagami (paper stencil)",6
+"kohiki (slip dipped)",1
+"none",34
+"other",1
+"sumi hajiki (ink resist)",1
+
+
+interior-decoration-color,count
+"cobalt blue",12
+"cobalt blue, pink",1
+"grey",1
+"none",34
+"reddish-brown",1
+"white",1
+
+
+interior-decoration-elements,count
+"asagao (morning glory)",1
+"hata (flags), kiku (chrysanthemum), kiri (paulownia), written characters",1
+"ho-o-o bird, karakusa (tendrils), kiri (paulownia), kiku (chrysanthemum)",1
+"horizontal band around rim",1
+"kaede (maple)",1
+"karakusa (tendrils), mitsu-domoe (threefold swirl), tsuru (crane), ume (plum) blossom, seven jewels and turtle shell diaper",1
+"none",37
+"pendant yoraku (rim design)",1
+"pendant yoraku, horizontal band, sho chiku bai (three friends)",1
+"sho chiku bai (three friends)",1
+"sho chiku bai (three friends), tassel yoraku (rim design)",2
+"take (bamboo)",1
+"tassel yoraku (rim design)",1
+
+
+manufacture-origin,count
+"japan",45
+"likely either koyama in the shigaraki region or mashiko in the northern kanto region, japan",1
+"likely the kyushu area, japan",1
+"possibly the seto or mino region, japan",3
+
+
+manufacture-range,count
+"likely taisho (1912-1926) through pre-wwii showa (1926-1942) era",3
+"meiji (1868-1912) through early showa (1926-1989) eras",9
+"meiji (1868-1912) through showa (1926-1989) eras",8
+"mid-meiji through early showa eras (1889-1945)",1
+"minimalistic hand-painted sometsuke may indicate taisho-era (1912-1926) manufacture",7
+"most popular during the meiji (1868-1912) era",6
+"most popular during the tokugawa (1603-1868) or early meiji (1868-1912) eras",1
+"most popular in the late taisho (1912-1926) and early showa (1926-1989) eras",2
+"most popular in the meiji (1868-1912) and taisho (1912-1926) eras",10
+"most popular in the taisho (1912-1926) and early showa (1926-1989) eras",1
+"most popular taisho (1912-1926) through very early showa (1926-1989) era",1
+"the dominantly green transferprint may indicate manufacture during or shortly after the taisho era (1912-1926)",1
