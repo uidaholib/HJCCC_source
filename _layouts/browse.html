@@ -13,27 +13,26 @@ layout: page
 
 <div class="row" id="browse-items">
     {% for item in items %}
-    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12" >
-            <a href="{{ "/data/" | absolute_url | append: item.object-id | append: ".html" }}">
-                {% if forloop.index < 20 %}<img class="card-img-top lazy"  src="{{ site.baseurl }}/objects/thumbs/{{ item.indexid }}_sm.jpg" alt="Card image cap">
-                {% else %}<img class="card-img-top lazy"  data-original="{{ site.baseurl }}/objects/thumbs/{{ item.indexid }}_sm.jpg" alt="Card image cap">{% endif %}
-            </a>
-            <div class="card text-center">
-                <h3 class="card-title">{{ item.title }}</h3>
-                <p class="card-text"><strong>Date:</strong> {{ item.date }}</p>
-                <p>
-                    {%- assign subjects = item.subject | split:';' -%}
-                    {%- assign location = item.coverage | split: ';' -%}
-                    {%- assign topics = subjects | concat: location -%}
-                    {% for topic in topics %}{% if topic !=" " %}
-                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ topic | trim |escape }}" href="{{ topic | trim | uri_escape | prepend: "/browse/#" | relative_url }}">{{ topic }}</a> 
-                    {% endif %}{% endfor %} 
-                </p>
-                <p class="card-text">{{ item.description | truncatewords: 20 }}</p>
-                <p>
-                <a href="{{ "/data/" | absolute_url | append: item.object-id | append: ".html" }}" class="btn btn-sm btn-info" title="link to {{ item.title | replace: '"', '' }}">Go to Item</a>
-            </div>
-         </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+    <div class="card" >
+        <a href="{{ "/data/" | absolute_url | append: item.object-id | append: ".html" }}">
+            {% if forloop.index < 20 %}<img class="card-img-top lazy" src="{{ site.repo-url }}/utils/getthumbnail/collection/HJCCC/id/{{ item.cdm-number }}" alt="{{ item.title | escape }}">
+            {% else %}<img class="card-img-top lazy" data-original="{{ site.repo-url }}/utils/getthumbnail/collection/HJCCC/id/{{ item.cdm-number }}" alt="{{ item.title | escape }}">{% endif %}
+        </a>
+        <div class="card-body">
+            <h3 class="card-title">{{ item.title }}</h3>
+            {% assign facets = "functional-category;material;vessel-form" | split: ";" %}
+            <p>
+            {% for f in facets %}
+                <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ item[f] | trim | uri_escape | prepend: "/browse/#" | relative_url }}">{{ item[f] }}</a> 
+            {% endfor %} 
+            </p>
+            <p class="card-text">{{ item.description | truncatewords: 20 }}</p>
+            <p>
+                <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" class="btn btn-sm btn-info" title="link to {{ item.title | escape }}">Go to Item</a>
+            </p>
+        </div>
+    </div>
     </div>
     {% endfor %}
 </div>
