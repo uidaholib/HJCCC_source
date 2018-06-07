@@ -3,12 +3,12 @@ title,Title,DC.title
 catalog-number,Catalog Number
 source,Source
 description,Description,DC.description
-coverage,Site Location,
-date,Site Date,
+site-location,Site Location,
+site-date,Site Date,
 functional-category,Functional Category
 material,Material
 vessel-form,Vessel Form
-dimensions,Artifact Dimensions
+artifact-dimensions,Artifact Dimensions
 pigment-application,Pigment Application
 decoration-type,Decoration Type
 exterior-decoration-method,Exterior Decoration Method
@@ -18,7 +18,7 @@ interior-decoration-method,Interior Decoration Method
 interior-decoration-color,Interior Decoration Color
 interior-decoration-elements,Interior Decoration Elements
 marks,Marks
-origin,Manufacture Origin
+manufacture-origin,Manufacture Origin
 manufacture-range,Manufacture Date Range
 publisher,Publisher
 rights,Rights

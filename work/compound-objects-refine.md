@@ -4,7 +4,7 @@
 
 1. export CDM data as tsv
 2. open in refine (if refine has issues, open with LibreOffice first, save as csv, then refine)
-3. sort on Identifier
+3. sort on Identifier, reorder permanently.
 4. on description, facet on blank
 5. select blank false, this is sub-set of object/record descriptions. 
 6. create an id by: create new column "object-id" from CDM number.
