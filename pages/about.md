@@ -3,9 +3,10 @@ title: About
 layout: page
 permalink: /about/
 ---
-## About the Collection
 <div markdown="1" class="row">
 <div markdown="1" class="col-md-8"><div markdown="1" class="py-3 px-4">
+
+## About the Collection
 
 The Historical Japanese Ceramic Comparative Collection (HJCCC) contains digital photographs and resources for identifying and describing Japanese ceramics manufactured during the Meiji and Taisho eras (roughly the nineteenth to early twentieth centuries). The intent of this collection is to provide archaeologists and other researchers with comparative examples of historical Japanese ceramics that are found on North American archaeological sites.
 
@@ -17,15 +18,15 @@ Many of the ceramics in this collection originally belonged to a diverse group o
 
 Although the HJCCC is not an exhaustive type collection of historical Japanese ceramics, the vessels it contains are examples of an important artifact class about which relatively little has been published. The intent of this collection is to assist in identification of historical Japanese ceramics, to help standardize terminology, and to encourage further research.
 
-In order to represent a more diverse cross-section of ceramics, the items in this collection are from multiple sources. Information about the parent collections and links to the curation facilities that house them can be found on the Resources page.
+In order to represent a more diverse cross-section of ceramics, the items in this collection are from multiple sources. Information about the parent collections and to the curation facilities that house them can be found at the links to the right.
 
-Many of the terms used to describe the ceramics in this collection are based on a classification system that relies heavily on Japanese language terms. By incorporating Japanese terms for vessel forms and design concepts, HJCCC terminology attempts to match the way that the Japanese ceramics industry describes their products, and the way that Issei communities would have understood the vessels that are the focus of this collection. This classification system was developed in collaboration with Japanese ceramics expert Leland Bibb and continues to grow with the input and collaboration of others, many of whome you can find cited [here]. Definitions of Japanese terms can be found in the HJCCC [Glossary]. 
+Many of the terms used to describe the ceramics in this collection are based on a classification system that relies on Japanese language terms. By incorporating Japanese terms for vessel forms and design concepts, HJCCC terminology attempts to match the way that the Japanese ceramics industry describes their products, and the way that Issei communities would have understood the vessels that are the focus of this collection. This classification system was developed in collaboration with Japanese ceramics expert Leland Bibb and continues to grow with the input and collaboration of other researchers. An abbreviated typology for forms can be seen [here], and full definitions of Japanese terms can be found in the HJCCC [Glossary]. 
 
 Questions, suggestions, and comments are welcome at rjcampbell@uidaho.edu.
 
 ### Acknowledgements
 
-This research was supported in part by the University of Idaho’s John Calhoun Smith Memorial Fund and facilitated through the Burke Museum of Natural History and Culture at the University of Washington, the US Air Force, the Asian American Comparative Collection at the University of Idaho, and the University of Idaho Library’s Digital Initiatives Program. Priscilla Wegars, volunteer curator of the Asian American Comparative Collection at the University of Idaho Laboratory of Anthropology, served as peer reviewer for the collection. 
+This research was supported in part by the University of Idaho’s John Calhoun Smith Memorial Fund and a Summer Research Fellowship at the Center for Digital Inquiry and Learning. Research eas facilitated through the [Burke Museum of Natural History and Culture](http://www.burkemuseum.org/) at the University of Washington, the US Air Force, the [Asian American Comparative Collection](http://webpages.uidaho.edu/aacc/) at the University of Idaho, the [University of Idaho Library’s Digital Initiatives Program](https://www.lib.uidaho.edu/digital/about.html), and the [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/). Priscilla Wegars, volunteer curator of the Asian American Comparative Collection at the University of Idaho Laboratory of Anthropology, served as peer reviewer for the collection. 
 Japanese ceramics experts Leland E. Bibb and Louise Allison Cort provided information and expertise invaluable to this research. 
 The information presented on these pages also owes a great deal to other researchers whose works are cited on the [Resources page]. 
 
