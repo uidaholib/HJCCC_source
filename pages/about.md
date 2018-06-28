@@ -20,7 +20,7 @@ Although the HJCCC is not an exhaustive type collection of historical Japanese c
 
 In order to represent a more diverse cross-section of ceramics, the items in this collection are from multiple sources. Information about the parent collections and to the curation facilities that house them can be found at the links to the right.
 
-Many of the terms used to describe the ceramics in this collection are based on a classification system that relies on Japanese language terms. By incorporating Japanese terms for vessel forms and design concepts, HJCCC terminology attempts to match the way that the Japanese ceramics industry describes their products, and the way that Issei communities would have understood the vessels that are the focus of this collection. This classification system was developed in collaboration with Japanese ceramics expert Leland Bibb and continues to grow with the input and collaboration of other researchers. An abbreviated typology for forms can be seen [here], and full definitions of Japanese terms can be found in the HJCCC [Glossary]. 
+Many of the terms used to describe the ceramics in this collection are based on a classification system that relies on Japanese language terms. By incorporating Japanese terms for vessel forms and design concepts, HJCCC terminology attempts to match the way that the Japanese ceramics industry describes their products, and the way that Issei communities would have understood the vessels that are the focus of this collection. This classification system was developed in collaboration with Japanese ceramics expert Leland Bibb and continues to grow with the input and collaboration of other researchers. An abbreviated typology for ceramic forms can be seen [here](https://uidaholib.github.io/HJCCC_source/forms/), and full definitions of Japanese terms can be found in the HJCCC [Glossary](https://uidaholib.github.io/HJCCC_source/resources/). 
 
 Questions, suggestions, and comments are welcome at rjcampbell@uidaho.edu.
 
@@ -28,7 +28,7 @@ Questions, suggestions, and comments are welcome at rjcampbell@uidaho.edu.
 
 This research was supported in part by the University of Idaho’s John Calhoun Smith Memorial Fund and a Summer Research Fellowship at the Center for Digital Inquiry and Learning. Research eas facilitated through the [Burke Museum of Natural History and Culture](http://www.burkemuseum.org/) at the University of Washington, the US Air Force, the [Asian American Comparative Collection](http://webpages.uidaho.edu/aacc/) at the University of Idaho, the [University of Idaho Library’s Digital Initiatives Program](https://www.lib.uidaho.edu/digital/about.html), and the [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/). Priscilla Wegars, volunteer curator of the Asian American Comparative Collection at the University of Idaho Laboratory of Anthropology, served as peer reviewer for the collection. 
 Japanese ceramics experts Leland E. Bibb and Louise Allison Cort provided information and expertise invaluable to this research. 
-The information presented on these pages also owes a great deal to other researchers whose works are cited on the [Resources page]. 
+The information presented on these pages also owes a great deal to other researchers whose works are cited on the [Resources page](https://uidaholib.github.io/HJCCC_source/resources/). 
 
 ### Data
 
