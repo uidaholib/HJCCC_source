@@ -1,0 +1,31 @@
+---
+layout: default
+gallery: true
+---
+
+<div class="py-3">
+    <div class="container py-3 rounded">
+    
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ "/" | absolute_url }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ "/resources/" | absolute_url }}">Resources</a></li>
+                <li class="breadcrumb-item active">{{ page.term }}</li>
+            </ul>
+        
+            <div class="row">
+                <div class="col-md-4" >
+                    <h2>{{ page.term }}</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>{{ page.definition }}</p>
+                    <p><a href="{{ '/browse/#' | append: page.search | relative_url }}">Browse</a></p>
+                </div> 
+            </div>
+            <div class="text-center">
+                <a class="btn btn-secondary" href="{{ "/resources/" | relative_url }}" role="button">&laquo; Glossary</a>
+            </div>
+        </div>
+    
+    </div>
+</div>

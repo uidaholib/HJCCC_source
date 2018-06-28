@@ -34,3 +34,8 @@ page_gen:
     name: 'object-id'
     dir: 'data'
     extension: 'html'
+  - data: 'hjccc-glossary'
+    template: 'terms'
+    name: 'url'
+    dir: 'resources'
+    extension: 'html'    
