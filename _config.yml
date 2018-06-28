@@ -5,8 +5,8 @@
 
 # Site settings
 title: Historical Japanese Ceramic Comparative Collection
-tagline: "A Collection of Japanese Ceramic Pieces, via Renae Campbell"
-description: "A Collection of Japanese Ceramic Pieces, via Renae Campbell" 
+tagline: "Historical Japanese ceramics from archaeological sites in the American West"
+description: "The Historical Japanese Ceramic Comparative Collection (HJCCC) contains digital photographs and resources for identifying and describing Japanese ceramics manufactured during the Meiji and Taisho eras..."
 keywords: university of idaho, HJCCC, digital collections
 email: ewilliamson@uidaho.edu
 
@@ -15,6 +15,9 @@ url: https://www.lib.uidaho.edu
 baseurl: /digital/hjccc
 repo-url: https://digital.lib.uidaho.edu
 repo-collection-ids: HJCCC
+
+#style with Bootswatch
+bstheme: yeti # leave blank or comment out for plain bootstrap
 
 # Dev variables: 
 # choose metadata set, i.e. easily switch between full or dev version
