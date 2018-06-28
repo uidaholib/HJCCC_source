@@ -16,8 +16,8 @@ layout: page
     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
     <div class="card" >
         <a href="{{ "/data/" | absolute_url | append: item.object-id | append: ".html" }}">
-            {% if forloop.index < 20 %}<img class="card-img-top lazy" src="{{ site.repo-url }}/utils/getthumbnail/collection/HJCCC/id/{{ item.cdm-number }}" alt="{{ item.title | escape }}">
-            {% else %}<img class="card-img-top lazy" data-original="{{ site.repo-url }}/utils/getthumbnail/collection/HJCCC/id/{{ item.cdm-number }}" alt="{{ item.title | escape }}">{% endif %}
+            {% if forloop.index < 20 %}<img class="card-img-top lazy" src="{{ site.repo-url }}/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={%if item.compound-numbers%}{{ item.cdm-number | minus: 1 }}{% else %}{{ item.cdm-number}}{% endif %}&amp;action=2&amp;DMSCALE=15&amp;DMWIDTH=1000&amp;DMHEIGHT=1000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0" alt="{{ item.title | escape }}">
+            {% else %}<img class="card-img-top lazy" data-original="{{ site.repo-url }}/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={%if item.compound-numbers%}{{ item.cdm-number | minus: 1 }}{% else %}{{ item.cdm-number}}{% endif %}&amp;action=2&amp;DMSCALE=15&amp;DMWIDTH=1000&amp;DMHEIGHT=1000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0" alt="{{ item.title | escape }}">{% endif %}
         </a>
         <div class="card-body">
             <h3 class="card-title">{{ item.title }}</h3>
@@ -27,7 +27,24 @@ layout: page
                 <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ item[f] | trim | uri_escape | prepend: "/browse/#" | relative_url }}">{{ item[f] }}</a> 
             {% endfor %} 
             </p>
-            <p class="card-text">{{ item.description | truncatewords: 20 }}</p>
+            <p class="card-text"><b>Material: </b>{{ item.material}}</p>
+            <p class="card-text"><b>Vessel Form: </b>{{ item.vessel-form}}</p>
+            <p class="card-text"><b>Decoration Type: </b>{{ item.decoration-type}}</p>
+            <p class="card-text"><b>Source: </b>{{ item.source}}</p>
+            <p class="card-text"><b>Catalog Number: </b>{{ item.catalog-number}}</p>
+            <p class="card-text"><b>Description: </b>{{ item.description | truncatewords: 20 }}</p>
+            <p class="d-none card-text">{{ item.artifact-dimensions}}</p>
+            <p class="d-none card-text">{{ item.site-location}}</p>
+            <p class="d-none card-text">{{ item.site-date}}</p>
+            <p class="d-none card-text">{{ item.functional-category}}</p>
+            <p class="d-none card-text">{{ item.pigment-application}}</p>
+            <p class="d-none card-text">{{ item.exterior-decoration-method}}</p>
+            <p class="d-none card-text">{{ item.exterior-decoration-color}}</p>
+            <p class="d-none card-text">{{ item.exterior-decoration-elements}}</p>
+            <p class="d-none card-text">{{ item.interior-decoration-method}}</p>
+            <p class="d-none card-text">{{ item.interior-decoration-color}}</p>
+            <p class="d-none card-text">{{ item.interior-decoration-elements}}</p>
+            <p class="d-none card-text">{{ item.marks}}</p>
             <p>
                 <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" class="btn btn-sm btn-info" title="link to {{ item.title | escape }}">Go to Item</a>
             </p>
