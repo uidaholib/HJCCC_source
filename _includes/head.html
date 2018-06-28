@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
 {% if site.bstheme %}<link rel="stylesheet" href="https://bootswatch.com/4/{{site.bstheme | downcase}}/bootstrap.min.css" type="text/css">
 {% else %}<link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | absolute_url }}" type="text/css">{% endif %}
+{% if layout.gallery == true %}<link rel="stylesheet" href="{{ "/assets/lightgallery/css/lightgallery.min.css" | absolute_url }}" type="text/css">{% endif %}
 <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" type="text/css">
 
 <!--<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>-->

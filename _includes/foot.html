@@ -4,6 +4,6 @@
 <!-- load other js -->
 {% if page.layout == "browse" %}{% include js/browse-js.html %}{% endif %}
 {% if page.layout == "data" %}{% include js/table-js.html %}{% endif %}
-{% if page.layout == "map" %}{% include js/map-js.html %}{% endif %}
 {% if page.layout == "subjects" %}{% include js/subjects-js.html %}{% endif %}
 {% if page.layout == "timeline" %}{% include js/timeline-js.html %}{% endif %}
+{% if layout.gallery == true %}{% include js/gallery-js.html %}{% endif %}
