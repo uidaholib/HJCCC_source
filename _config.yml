@@ -11,8 +11,8 @@ keywords: university of idaho, HJCCC, digital collections
 email: ewilliamson@uidaho.edu
 
 # url variables
-url: https://www.lib.uidaho.edu
-baseurl: /digital/hjccc
+url: https://uidaholib.github.io
+baseurl: /HJCCC_source
 repo-url: https://digital.lib.uidaho.edu
 repo-collection-ids: HJCCC
 
