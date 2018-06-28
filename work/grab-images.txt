@@ -1,0 +1,3 @@
+{%- for item in site.data.hjccc-images -%}
+https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={{ item.cdm-number }}&amp;action=2&amp;DMSCALE=100&amp;DMWIDTH=9000&amp;DMHEIGHT=9000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0
+{% endfor %}
