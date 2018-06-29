@@ -13,7 +13,7 @@ layout: page
 
 <div class="row" id="browse-items">
     {% for item in items %}
-    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
     <div class="card" >
         <a href="{{ "/data/" | absolute_url | append: item.object-id | append: ".html" }}">
             {% if forloop.index < 20 %}<img class="card-img-top lazy" src="{{ site.repo-url }}/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={%if item.compound-numbers%}{{ item.cdm-number | minus: 1 }}{% else %}{{ item.cdm-number}}{% endif %}&amp;action=2&amp;DMSCALE=15&amp;DMWIDTH=1000&amp;DMHEIGHT=1000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0" alt="{{ item.title | escape }}">
