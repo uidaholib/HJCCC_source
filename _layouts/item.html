@@ -17,13 +17,13 @@ gallery: true
             {% for image in images %}
             <div class="card mb-2">
                 <div>
-                    <a href="https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={{ image.cdm-number }}&amp;action=2&amp;DMSCALE=100&amp;DMWIDTH=6000&amp;DMHEIGHT=6000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0" data-download-url="https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={{ image.cdm-number }}&amp;action=2&amp;DMSCALE=100&amp;DMWIDTH=6000&amp;DMHEIGHT=6000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0">
-                        <img src="{{ site.repo-url }}/utils/getthumbnail/collection/HJCCC/id/{{ image.cdm-number }}" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-thumbnail">
-                    </a>
+                    <div class="gallery-img" data-src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg">
+                        <img src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}_sm.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
+                    </div>
                 </div>
                 <div class="text-center my-2">
                     <p>{{ image.title }}</p>
-                    <!--<a href="https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={{ image.cdm-number }}&amp;action=2&amp;DMSCALE=100&amp;DMWIDTH=6000&amp;DMHEIGHT=6000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0" target="_blank" class="btn btn-sm btn-primary" title="image download">Download Image</a>-->
+                    <a href="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg" target="_blank" class="btn btn-sm btn-primary" title="image download">Download Image</a>
                 </div>
             </div>
             {% endfor %}
