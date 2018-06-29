@@ -2,7 +2,7 @@
 # funny script to write python to grab images from CDM and rename 
 ---
 import wget
-items = [{%- for item in site.data.hjccc-images -%}[{{ item.cdm-number }},{{ item.identifier }}]{% unless forloop.last %},{% endunless %}{% endfor %}]
+items = [{%- for item in site.data.hjccc-images -%}["{{ item.cdm-number }}","{{ item.identifier }}"]{% unless forloop.last %},{% endunless %}{% endfor %}]
 for i in items:
     url = "https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=HJCCC&CISOPTR=" + i[0] + "&action=2&DMSCALE=100&DMWIDTH=9000&DMHEIGHT=9000&DMX=0&DMY=0&DMTEXT=&DMROTATE=0"
     name = i[1] + ".jpg"
