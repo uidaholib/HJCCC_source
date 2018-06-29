@@ -4,10 +4,7 @@ gallery: true
 ---
 {%- assign fields = site.data.metadata-fields -%}
 
-
 <div class="container py-3">
-
-<div class="container">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ "/" | absolute_url }}">Home</a></li>
         <li class="breadcrumb-item"><a href="{{ "/data/" | absolute_url }}">Items</a></li>
@@ -15,16 +12,18 @@ gallery: true
     </ul>
 
     <div class="row">
-        <div class="col-md-3" >
+        <div class="col-md-3" id="lightgallery" >
             {% assign images = site.data.hjccc-images | where: "object-id", page.object-id %}
             {% for image in images %}
             <div class="card mb-2">
-                <div id="item-image">
-                    <img src="{{ site.repo-url }}/utils/getthumbnail/collection/HJCCC/id/{{ image.cdm-number }}" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-thumbnail">
+                <div>
+                    <a href="https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={{ image.cdm-number }}&amp;action=2&amp;DMSCALE=100&amp;DMWIDTH=6000&amp;DMHEIGHT=6000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0" data-download-url="https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={{ image.cdm-number }}&amp;action=2&amp;DMSCALE=100&amp;DMWIDTH=6000&amp;DMHEIGHT=6000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0">
+                        <img src="{{ site.repo-url }}/utils/getthumbnail/collection/HJCCC/id/{{ image.cdm-number }}" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-thumbnail">
+                    </a>
                 </div>
-                <div id="item-link" class="text-center my-2">
+                <div class="text-center my-2">
                     <p>{{ image.title }}</p>
-                    <a href="https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={{ image.cdm-number }}&amp;action=2&amp;DMSCALE=100&amp;DMWIDTH=6000&amp;DMHEIGHT=6000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0" target="_blank" class="btn btn-sm btn-primary" title="image download">Download Image</a>
+                    <!--<a href="https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=HJCCC&amp;CISOPTR={{ image.cdm-number }}&amp;action=2&amp;DMSCALE=100&amp;DMWIDTH=6000&amp;DMHEIGHT=6000&amp;DMX=0&amp;DMY=0&amp;DMTEXT=&amp;DMROTATE=0" target="_blank" class="btn btn-sm btn-primary" title="image download">Download Image</a>-->
                 </div>
             </div>
             {% endfor %}
@@ -67,6 +66,4 @@ gallery: true
     <div class="text-center">
         <a class="btn btn-secondary" href="{{ "/data/" | relative_url }}" role="button">&laquo; Back to item table</a>
     </div>
-</div>
-
 </div>
