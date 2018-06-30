@@ -12,31 +12,32 @@ gallery: true
             <li class="breadcrumb-item active">{{ page.term }}</li>
         </ul>
     
-        <div class="row">
-            <div class="col-md-5" >
+        <div class="row" id="lightgallery">
+            <div class="col-md-6" >
                 <h2>{{ page.term }}</h2>
                 <p>{{ page.definition }}</p>
-                <p><a href="{{ '/browse/#' | append: page.search | relative_url }}">Browse</a></p>
+                <p><a class="btn btn-info" href="{{ '/browse/#' | append: page.search | relative_url }}">Browse Objects</a></p>
             </div>
-            <div class="col-md-7" id="lightgallery">
-                {% for item in objects %}
-                {% if item.subjects contains page.search %}
-                {% assign image = site.data.hjccc-images | where: "object-id", item.object-id | first %}
+            
+            {% for item in objects %}
+            {% if item.subjects contains page.search %}
+            {% assign image = site.data.hjccc-images | where: "object-id", item.object-id | first %}
+            <div class="col-6 col-md-3">
                 <div class="card mb-2">
                     <div>
                         <div class="gallery-img" data-src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg">
-                            <img src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}_sm.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
+                            <img src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}_th.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
                         </div>
                     </div>
                     <div class="text-center my-2">
-                        <p>{{ image.title }}</p>
+                        <p class="d-none d-md-block">{{ image.title }}</p>
                         <a href="{{ '/data/' | absolute_url | append: image.object-id | append: '.html' }}" class="btn btn-sm btn-primary" title="image download">View Item</a>
                     </div>
                 </div>
-                {% endif %}
-                {% endfor %}
-                
-            </div> 
+            </div>
+            {% endif %}
+            {% endfor %}
+
         </div>
         <div class="text-center">
             <a class="btn btn-secondary" href="{{ "/resources/" | relative_url }}" role="button">&laquo; Glossary</a>

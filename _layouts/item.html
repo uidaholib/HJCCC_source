@@ -46,8 +46,12 @@ gallery: true
             <div class="card mb-2">
                 <div class="card-header">Source</div>
                 <div class="card-body">
-                    <p class="card-text">Preferred Image Citation: {{ page.preferred-image-citation }}</p>
-                    <p class="card-text">Link: {{ page.url | absolute_url }}</p>
+                    <dl>
+                        <dt>Preferred Image Citation:</dt> 
+                        <dd>{{ page.preferred-image-citation }}</dd>
+                        <dt>Reference Link:</dt>
+                        <dd>{{ page.url | absolute_url }}</dd>
+                    </dl>
                 </div>
             </div>
             <div class="card mb-2">
