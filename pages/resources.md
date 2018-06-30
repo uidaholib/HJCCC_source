@@ -17,5 +17,5 @@ permalink: /resources/
 # Works Cited
 
 {% for citation in site.data.references %}
-<p class="hangingindent">{{citation.author}},{{citation.publication}}</p>
+<p class="hangingindent">{{citation.author}}, {{citation.publication}}</p>
 {% endfor %}
