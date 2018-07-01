@@ -3,33 +3,28 @@ layout: page
 ---
 
 {% assign items = site.data[site.metadata] %}
+{% assign eras = "Tokugawa (1603-1868);Meiji (1868-1912);Taisho (1912-1926);Showa (1926-1989)" | split: ";" %}
 
-{% assign raw-dates = site.data[site.metadata] | map: 'date' | compact %}
-{% capture clean-years %}{% for date in raw-dates %}{% if date contains "-" %}{{date | split: "-" | first }}{% elsif date contains "/" %}{{ date | split: "/" | last }}{% else %}{{ date }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{% endcapture %}
-{%- assign years = clean-years | split: ";" | sort -%}
-{%- assign uniqueYears = years | uniq | sort -%}
-{%- assign navYears = "1960;1970;1980;1990;2000;2010" | split: ";" -%}
 <style> .img-thumbnail { height: 200px; } </style>
 
 <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle float-right" type="button" id="year-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to Year</button>
+    <button class="btn btn-secondary dropdown-toggle float-right" type="button" id="year-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to Era</button>
     <div class="dropdown-menu" aria-labelledby="year-nav">
-      {% for y in navYears %}
-      <a class="dropdown-item" href="#{{ y }}">{{ y }}</a>{% endfor %}
+      {% for y in eras %}
+      <a class="dropdown-item" href="#{{ y | escape }}">{{ y }}</a>{% endfor %}
     </div>
 </div>
 
 {{ content }}
 
-<p>Browse all IWDL documents from <a href="#{{ years | first }}">{{ years | first }}</a> to <a href="#{{ years | last }}">{{ years | last }}</a></p>
-
 <table id="timeline" class="table table-striped">
-  {% for date in uniqueYears %}
+  {% for era in eras %}
   <tr>
-    <th><h3 id="{{date}}">{{ date }}</h2></th>
+    <th><h3 id="{{ era | escape }}">{{ era }}</h2></th>
     <td>
-    {% for item in items %}{% if item.date contains date %}
-    <a href="{{ "/docs/" | absolute_url | append: item.resource-identifier | append: ".html" }}" ><img class="lazy img-thumbnail m-1" data-original="https://www.lib.uidaho.edu/digital/iwdl/images/thumb/{{ item.resource-identifier }}.jpg" alt="{{ item.title }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | replace: '"', '&#34;' }} | {{ item.date }}"></a>
+    {% for item in items %}{% if item.manufacture-range contains era %}
+    {% assign images = site.data.hjccc-images | where: "object-id", item.object-id | first %}
+    <a href="{{ "/data/" | absolute_url | append: item.object-id | append: ".html" }}" ><img class="lazy img-thumbnail m-1" data-original="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ images.identifier }}_th.jpg" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.manufacture-range }}"></a>
     {% endif %}{% endfor %}
     </td>
   </tr>
