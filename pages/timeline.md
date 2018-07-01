@@ -8,3 +8,5 @@ permalink: /timeline/
 ## Eras
 
 Most items can not be precisely dated, but fall into broad periods of popularity and manufacturing.
+This visualization pulls together objects based on their approximate period of manufacturing. 
+Objects may appear in multiple eras.
