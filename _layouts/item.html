@@ -3,6 +3,7 @@ layout: default
 gallery: true
 ---
 {%- assign fields = site.data.metadata-fields -%}
+{%- assign glossary = site.data.hjccc-glossary | map: "search" -%}
 
 <div class="container py-3">
     <ul class="breadcrumb">
@@ -35,11 +36,11 @@ gallery: true
                     {% for f in fields %}{% if page[f.field] %}
                     <dt class="field">{{ f.display-name }}:</dt>
                     <dd class="field-value">
-                    {% if f.field == "functional-category" %}<a href="{{ page[f.field] | strip | uri_escape | prepend: '/browse/#' | absolute_url }}" >{{ page[f.field] }}</a>
-                    {% elsif f.field == "material" %}<a href="{{ page[f.field] | strip | slugify | append: '.html' | prepend: '/resources/' | absolute_url }}" >{{ page[f.field] }}</a>
-                    {% elsif f.field == "vessel-form" %}{% if page[f.field] == "Unknown" %}{{ page[f.field] }}{% else %}<a href="{{ page[f.field] | strip | slugify | append: '.html' | prepend: '/resources/' | absolute_url }}" >{{ page[f.field] }}</a>{% endif %}
-                    {% elsif f.field == "decoration-type" %}{% if page[f.field] == "Unknown" or page[f.field] == "Other" or page[f.field] == "Undecorated" %}{{ page[f.field] }}{% else %}<a href="{{ page[f.field] | strip | slugify | append: '.html' | prepend: '/resources/' | absolute_url }}" >{{ page[f.field] }}</a>{% endif %}
-                    {% else %}{{ page[f.field] }}{% endif %}
+                        {% if f.glossary-link == "true" %}
+                        {% if glossary contains page[f.field] %}
+                        <a href="{{ page[f.field] | strip | slugify | append: '.html' | prepend: '/resources/' | absolute_url }}" >{{ page[f.field] }}</a>{% else %}{{ page[f.field] }}{% endif %}
+                        {% elsif f.field == "functional-category" %}<a href="{{ page[f.field] | strip | uri_escape | prepend: '/browse/#' | absolute_url }}" >{{ page[f.field] }}</a>
+                        {% else %}{{ page[f.field] }}{% endif %}
                     </dd>
                     {% endif %}{% endfor %}
                 </dl>
