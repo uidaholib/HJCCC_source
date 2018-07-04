@@ -11,7 +11,7 @@ layout: page
     <button class="btn btn-secondary dropdown-toggle float-right" type="button" id="year-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to Era</button>
     <div class="dropdown-menu" aria-labelledby="year-nav">
       {% for y in eras %}
-      <a class="dropdown-item" href="#{{ y | escape }}">{{ y }}</a>{% endfor %}
+      <a class="dropdown-item" href="#{{ y | slugify }}">{{ y }}</a>{% endfor %}
     </div>
 </div>
 
@@ -20,7 +20,7 @@ layout: page
 <table id="timeline" class="table table-striped">
   {% for era in eras %}
   <tr>
-    <th><h3 id="{{ era | escape }}">{{ era }}</h2></th>
+    <th><h3 id="{{ era | slugify }}">{{ era }}</h2></th>
     <td>
     {% for item in items %}{% if item.manufacture-range contains era %}
     {% assign images = site.data.hjccc-images | where: "object-id", item.object-id | first %}

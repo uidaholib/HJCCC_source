@@ -36,6 +36,6 @@ page_gen:
     extension: 'html'
   - data: 'hjccc-glossary'
     template: 'terms'
-    name: 'url'
+    name: 'slug'
     dir: 'resources'
     extension: 'html'    
