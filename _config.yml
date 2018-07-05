@@ -12,7 +12,9 @@ email: ewilliamson@uidaho.edu
 
 # url variables
 url: https://uidaholib.github.io
+# url: https://www.lib.uidaho.edu
 baseurl: /HJCCC_source
+# baseurl: /digital/hjccc
 repo-url: https://digital.lib.uidaho.edu
 repo-collection-ids: HJCCC
 
