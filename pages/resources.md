@@ -4,7 +4,10 @@ layout: page
 permalink: /resources/
 ---
 
-# Glossary
+# Resources
+
+
+## Glossary
 
 <dl>
     {% for item in site.data.hjccc-glossary %}
@@ -14,7 +17,7 @@ permalink: /resources/
     {% endfor %}
 </dl>
 
-# Works Cited
+## Works Cited
 
 {% for citation in site.data.references %}
 <p class="hangingindent">{{ citation.author }}, {{ citation.publication }}</p>
