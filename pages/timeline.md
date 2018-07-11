@@ -7,7 +7,7 @@ permalink: /timeline/
 
 ## Japanese Eras
 
-Most items cannot be precisely dated but fall into broad periods based on stylistic trends and technological change with the Japanese ceramics industry.
-This visualization pulls together objects based on their peak popularity and approximate period of manufacture.
-Objects that with longer periods of manufacture or popularity appear in multiple eras.
+Most items cannot be precisely dated but fall into broad periods that reflect stylistic trends and technological change within the Japanese ceramics industry.
+This visualization assigns HJCCC objects to likely manufacture eras based on decorative elements, marks, or manufacture/decoration method.
+Objects with longer periods of manufacture or popularity appear in multiple eras.
 
