@@ -14,7 +14,7 @@ Glossary terms describing elements present on HJCCC items link to examples along
 
 <dl>
     {% for item in site.data.hjccc-glossary %}
-    <dt>{% if item.search %}<a href="{{ '/resources/' | append: item.slug | append: '.html' | relative_url }}">
+    <dt class="glossary-def">{% if item.search %}<a href="{{ '/resources/' | append: item.slug | append: '.html' | relative_url }}">
     {{ item.term }}</a>{% else %}{{ item.term }}{% endif %}</dt>
     <dd>- {{ item.definition }}</dd>
     {% endfor %}

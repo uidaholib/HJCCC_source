@@ -16,7 +16,7 @@ gallery: true
             <div class="col-md-6" >
                 <h2>{{ page.term }}</h2>
                 <p>{{ page.definition }}</p>
-                <p><a class="btn btn-info" href="{{ '/browse/#' | append: page.search | relative_url }}">Browse Objects</a></p>
+                <p><a class="btn btn-clearwater btn-lg" href="{{ '/browse/#' | append: page.search | relative_url }}">Browse Items</a></p>
             </div>
             
             {% for item in objects %}
@@ -31,7 +31,7 @@ gallery: true
                     </div>
                     <div class="text-center my-2">
                         <p class="d-none d-md-block">{{ image.title }}</p>
-                        <a href="{{ '/data/' | absolute_url | append: image.object-id | append: '.html' }}" class="btn btn-sm btn-primary" title="image download">View Item</a>
+                        <a href="{{ '/data/' | absolute_url | append: image.object-id | append: '.html' }}" class="btn btn-clearwater" title="image download">View Item</a>
                     </div>
                 </div>
             </div>

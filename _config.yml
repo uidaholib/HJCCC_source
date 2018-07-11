@@ -19,7 +19,7 @@ repo-url: https://digital.lib.uidaho.edu
 repo-collection-ids: HJCCC
 
 #style with Bootswatch
-bstheme: yeti # leave blank or comment out for plain bootstrap
+bstheme: # leave blank or comment out for plain bootstrap
 
 # Dev variables: 
 # choose metadata set, i.e. easily switch between full or dev version

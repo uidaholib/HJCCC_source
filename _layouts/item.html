@@ -24,7 +24,7 @@ gallery: true
                 </div>
                 <div class="text-center my-2">
                     <p>{{ image.title }}</p>
-                    <a href="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg" target="_blank" class="btn btn-sm btn-primary" title="image download">Download Image</a>
+                    <a href="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg" target="_blank" class="btn btn-clearwater" title="image download">View Full Screen</a>
                 </div>
             </div>
             {% endfor %}
@@ -47,6 +47,17 @@ gallery: true
             </div>
         </div>
         <div class="col-md-3">
+                <div class="card mb-2">
+                        <div class="card-header">Related Items</div>
+                        <div class="card-body">
+                            {% assign facets = "functional-category;material;vessel-form" | split: ";" %}
+                            <p>
+                            {% for f in facets %}
+                                <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ page[f] | trim | uri_escape | prepend: "/browse/#" | relative_url }}">{{ page[f] }}</a> 
+                            {% endfor %}
+                            </p>
+                        </div>
+                    </div>
             <div class="card mb-2">
                 <div class="card-header">Source</div>
                 <div class="card-body">
@@ -59,16 +70,17 @@ gallery: true
                 </div>
             </div>
             <div class="card mb-2">
-                <div class="card-header">Related Items</div>
-                <div class="card-body">
-                    {% assign facets = "functional-category;material;vessel-form" | split: ";" %}
-                    <p>
-                    {% for f in facets %}
-                        <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ page[f] | trim | uri_escape | prepend: "/browse/#" | relative_url }}">{{ page[f] }}</a> 
-                    {% endfor %}
-                    </p>
+                    <div class="card-header">Rights</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Rights:</dt> 
+                            <dd>{{ page.rights }}</dd>
+                            <dt>Standardized Rights:</dt>
+                            <dd><a target="_blank" href="{{ page.standardized-rights }}">{{ page.standardized-rights }}</a></dd>
+                        </dl>
+                    </div>
                 </div>
-            </div>
+
         </div>
     </div>
     <div class="text-center">

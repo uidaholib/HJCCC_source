@@ -1,11 +1,21 @@
 ---
-layout: page
+layout: home-default
 ---
 {%- assign items = site.data[site.metadata] -%}
 
+  <div class="container-fluid ">
+          {{ content }}
+  </div>
+  
 {% include index/jumbotron.html %}
-
+<div class="container">
 <div class="row">
+    <div class="col-md-8">
+
+        {% include index/description.html %}
+        {% include index/locations.html %}
+      
+        </div>
   <div class="col-md-4">  
 
     {% include index/documents.html %}
@@ -25,10 +35,5 @@ layout: page
     {% include index/subjects.html %}
 
   </div>
-  <div class="col-md-8">
 
-  {% include index/description.html %}
-  {% include index/locations.html %}
-
-  </div>
 </div>
