@@ -6,7 +6,7 @@ permalink: /resources/
 
 # Resources
 
-This page contains a glossary of terms and a list of references cited in the HJCCC.  
+This page contains a glossary of terms and a list of references cited in the HJCCC.
 Both are organized alphabetically.
 Glossary terms describing elements present on HJCCC items link to examples along with the term definition.  
 
