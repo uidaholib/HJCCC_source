@@ -14,7 +14,7 @@ The Historical Japanese Ceramic Comparative Collection (HJCCC) contains digital 
 
 Many of the ceramics in this collection originally belonged to a diverse group of Japanese laborers, families, and American citizens who arrived in North America between approximately 1880 and 1924 and who are collectively known as Issei (Densho Encyclopedia 2017). As material remnants of daily life these ceramics not only provide insight into the nineteenth and twentieth-century Japanese ceramics industry and international exchanges of art, technology, and commercial goods, they also contribute to studies examining the experiences of Issei and their descendants.  
 
-### The Collections
+### Collections
 
 Although the HJCCC is not an exhaustive type collection of historical Japanese ceramics, the vessels it contains are examples of an important artifact class about which relatively little has been published. The intent of this collection is to assist in identification of historical Japanese ceramics, to help standardize terminology, and to encourage further research. In order to represent a more diverse section of ceramics, the items in this collection are from multiple sources. 
 
@@ -22,7 +22,9 @@ Roughly half of the items in the collection are from Japanese Gulch Village, an 
 
 The remainder of the ceramics featured on this digital collection are from the [Asian American Comparative Collection](http://webpages.uidaho.edu/aacc/){:target='_blank'} (AACC) at the University of Idaho. The AACC maintains a comprehensive collection of Asian-manufactured objects that have been, or are likely to be, found in archaeological or museum contexts in the western United States. Unless noted, objects from this collection are comparative examples of historical Japanese ceramics that are not from archaeological sites. 
 
-Many of the terms used to describe the ceramics in this collection are based on a classification system that relies on Japanese language terms. By incorporating Japanese terms for vessel forms and design concepts, HJCCC terminology attempts to match the way that the Japanese ceramics industry describes their products, and the way that Issei communities would have understood the vessels that are the focus of this collection. This classification system was developed in collaboration with Japanese ceramics expert Leland Bibb and continues to grow with the input and collaboration of other researchers. An abbreviated typology for ceramic forms can be seen on the [forms page]({{ '/forms/' | relative_url }}), and full definitions of Japanese terms can be found in the HJCCC [Glossary]({{ '/resources/' | relative_url }}). 
+### Classification
+
+Many of the terms used to describe the ceramics in this collection are based on a classification system that relies on Japanese language terms. By incorporating Japanese terms for vessel forms and design concepts, HJCCC terminology attempts to match the way that the Japanese ceramics industry describes their products, and the way that Issei communities would have understood the vessels that are the focus of this collection. This classification system was developed in collaboration with Japanese ceramics expert Leland Bibb as part of a master's research project at the University of Idaho (Campbell 2017a, 2017b). It continues to grow with the input and assistance of other researchers. An abbreviated typology for ceramic forms can be seen on the [Forms page]({{ '/forms/' | relative_url }}), and full definitions of Japanese terms can be found in the HJCCC [Glossary]({{ '/resources/' | relative_url }}). 
 
 Questions, suggestions, and comments are welcome at rjcampbell@uidaho.edu.
 
