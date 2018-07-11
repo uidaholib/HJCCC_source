@@ -6,8 +6,9 @@ permalink: /resources/
 
 # Resources
 
-A glossary of terms and a list of references cited in the HJCCC are presented below in alphabetical order.
-Glossary terms describing elements present on HJCCC items link to examples along with the term definition. 
+This page contains a glossary of terms and a list of references cited in the HJCCC.  
+Both are organized alphabetically.
+Glossary terms describing elements present on HJCCC items link to examples along with the term definition.  
 
 ## Glossary
 
@@ -19,7 +20,7 @@ Glossary terms describing elements present on HJCCC items link to examples along
     {% endfor %}
 </dl>
 
-## Works Cited
+## References Cited
 
 {% for citation in site.data.references %}
 <p class="hangingindent">{{ citation.author }}. {{ citation.publication }}</p>
