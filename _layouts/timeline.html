@@ -8,7 +8,7 @@ layout: page
 <style> .img-thumbnail { height: 200px; } </style>
 
 <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle float-right" type="button" id="year-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to Era</button>
+    <button class="btn btn-pride-gold dropdown-toggle float-right" type="button" id="year-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to Era</button>
     <div class="dropdown-menu" aria-labelledby="year-nav">
       {% for y in eras %}
       <a class="dropdown-item" href="#{{ y | slugify }}">{{ y }}</a>{% endfor %}
