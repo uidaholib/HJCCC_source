@@ -5,8 +5,9 @@ layout: timeline
 permalink: /timeline/
 ---
 
-## Eras
+## Japanese Eras
 
-Most items can not be precisely dated, but fall into broad periods of popularity and manufacturing.
-This visualization pulls together objects based on their approximate period of manufacturing. 
-Objects may appear in multiple eras.
+Most items cannot be precisely dated but fall into broad periods based on stylistic trends and technological change with the Japanese ceramics industry.
+This visualization pulls together objects based on their peak popularity and approximate period of manufacture. 
+Objects that with longer periods of manufacture or popularity appear in multiple eras.
+
