@@ -67,7 +67,10 @@ nav, footer {
 .gallery-img {
     cursor: pointer;
 }
-.jumbotron{height:400px;}
+.jumbotron{height:400px;
+    @include media-query($on-palm) {
+height:430px;
+}}
 dt{font-size:20px;}
 .glossary-def{font-size:26px;}
 
