@@ -1,0 +1,28 @@
+{%- assign carousel-items = site.data.hjccc-images -%}
+
+<script>
+     var objectids = [{% for item in carousel-items %}{% if forloop.last %}"{{item.object-id}}"{%else%}"{{item.object-id}}",{% endif %}{% endfor %}];
+     var imageids = [{% for item in carousel-items %}{% if forloop.last %}"{{item.identifier}}"{%else%}"{{item.identifier}}",{% endif %}{% endfor %}];
+    {% for i in (1..9) %}var image{{ i }} = document.getElementById("car-image{{ i }}");
+    var itemlink{{ i }} = document.getElementById("itemlink{{ i }}");   
+    {% endfor %}
+    /* Fisher-Yates shuffle https://bost.ocks.org/mike/shuffle/ */
+    function shuffle(array) {
+        var m = array.length, t, i;
+        while (m) {
+        i = Math.floor(Math.random() * m--);
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+        }
+        return array;
+    }
+    shuffle(objectids);
+    shuffle(imageids);
+    console.log(imageids);
+    {% for i in (1..9) %}
+itemlink{{ i }}.href = '{{ "/data/" | relative_url }}' +objectids[{{ i }}]+'.html';
+image{{ i }}.src = 'https://www.lib.uidaho.edu/digital/hjccc/objects/'+imageids[{{ i }}]+'_sm.jpg';
+    {% endfor %}
+   
+</script>

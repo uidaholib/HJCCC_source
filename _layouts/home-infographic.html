@@ -13,27 +13,21 @@ layout: home-default
     <div class="col-md-8">
 
         {% include index/description.html %}
-        {% include index/locations.html %}
-      
+        {% include index/carousel.html %}
+        
         </div>
   <div class="col-md-4">  
 
-    {% include index/documents.html %}
-    
-    <div class="card mb-3" >
-      <div class="card-body">
-        <h5 class="card-title">Source Collections</h5>
-        <p class="card-text">
-          <ul class="list-unstyled">
-            <li>Asian American Comparative Collection: <a href="{{ 'asian american comparative collection' | uri_escape | prepend: '/browse/#' | absolute_url }}">23 objects</a>.</li>
-            <li>Burke Museum of Natural History and Culture, US Air Force Collection: <a href="{{ 'burke museum of natural history' | uri_escape | prepend: '/browse/#' | absolute_url }}">27 objects</a>.</li>
-          </ul>
-        </p>
-      </div>
-    </div>
-
+    {% include index/eras.html %}
     {% include index/subjects.html %}
+    {% include index/forms.html %}
+    {% include index/documents.html %}
+
+
+   
 
   </div>
-
+<div class="col-md-12">
+    {% include index/sources.html %}
+</div>
 </div>

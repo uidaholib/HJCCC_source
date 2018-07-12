@@ -1,6 +1,7 @@
-<a class="card mb-3" href="{{ "/data/" | relative_url }}">
+<div class="card mb-3" >
   <div class="card-body">
-    <h5 class="card-title">Objects</h5>
-    <p class="card-text">{{ items | size }} items, {{ site.data.hjccc-images | size }} images</p>
+    <h5 class="card-title">Data</h5>
+    <p class="card-text"><a href="{{ "/data/" | relative_url }}">{{ items | size }} items, {{ site.data.hjccc-images | size }} images</a></p>
+    {% include data-download.html%}
   </div>
-</a>
+</div>

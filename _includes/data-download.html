@@ -1,9 +1,5 @@
----
-layout: page
----
-<link rel="stylesheet" type="text/css" href="{{ "/assets/datatables/datatables.min.css" | relative_url }}">
-
 <button type="button" class="btn btn-clearwater float-md-right" data-toggle="modal" data-target="#data">Download Data</button>
+
 <!-- Modal -->
 <div class="modal fade" id="data" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -23,20 +19,4 @@ layout: page
             </div>
         </div>
     </div>
-</div>
-
-{{ content }}
-
-<div class="table-responsive-md">
-    <table id="item-table" class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Form</th>
-                <th scope="col">Description</th>
-                <th scope="col">Catalog</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-    </table>
 </div>
