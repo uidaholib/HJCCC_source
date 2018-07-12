@@ -9,7 +9,8 @@
 }*/
 body {
     font-family: $base-font-family;
-    font-size: $base-font-size;}
+    font-size: $base-font-size;
+}
 a {
     color: $link-color;
     text-decoration: none;
@@ -67,17 +68,28 @@ nav, footer {
 .gallery-img {
     cursor: pointer;
 }
-.jumbotron{height:400px;
+.jumbotron {
+    height:400px;
     @include media-query($on-palm) {
-height:430px;
-}}
-dt{font-size:20px;}
-.glossary-def{font-size:26px;}
-
+        height:430px;
+    }
+}
+dt {
+    font-size:20px;
+}
+.glossary-def {
+    font-size:26px;
+}
 .lg-outer .lg-thumb-outer {
-    background-color: transparent !important;}
-
-    .nav-link{font-size: 20px !important;
-        font-weight: 300 !important;}
-.jumbo-text{background:rgba(171, 167, 167, 0.4)}    
-.card-title{font-size:1.5rem}    
+    background-color: transparent !important;
+}
+.nav-link {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+}
+.jumbo-text{
+    background:rgba(171, 167, 167, 0.4);
+}    
+.card-title{
+    font-size:1.5rem;
+}    
