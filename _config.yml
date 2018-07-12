@@ -18,6 +18,9 @@ baseurl: /HJCCC_source
 repo-url: https://digital.lib.uidaho.edu
 repo-collection-ids: HJCCC
 
+jumbotron-image: /objects/45SN398B-2007-1692-cr.jpg
+
+
 #style with Bootswatch
 bstheme: # leave blank or comment out for plain bootstrap
 

@@ -39,7 +39,7 @@ $background-color: #fdfdfd;
 $nav-background: #e8e8e8; //#CBCCD0;
 $link-color:      $clearwater;
 
-$jumbotron-image: url('https://www.lib.uidaho.edu/images/U-Idaho_Library_Oct2_current.jpg');
+$jumbotron-image: url('{{site.jumbotron-image | relative_url}}');
 
 
 
