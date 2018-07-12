@@ -6,11 +6,8 @@ permalink: /glossary/
 
 # Glossary
 
-This page contains a glossary of terms and a list of references cited in the HJCCC.
-Both are organized alphabetically.
-Glossary terms describing elements present on HJCCC items link to examples along with the term definition.  
-
-## Glossary
+Technical terms and Japanese language phrases used in the HJCCC are presented here alphabetically.
+Each term is defined and those that describe elements present on HJCCC items link to examples along with the term definition.  
 
 <dl>
     {% for item in site.data.hjccc-glossary %}
