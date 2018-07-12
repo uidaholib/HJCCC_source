@@ -53,7 +53,7 @@ Document metadata is exposed using [DCMI](http://dublincore.org/), [Schema.org](
 </div></div>
 {% include aboutsidebar.html %}
 </div><div markdown="1" class="row">
-<div markdown="1" class="col-md-12 px-4">
+<div markdown="1" class="col-md-12 pl-5">
 ## References Cited in the HJCCC
 
 {% for citation in site.data.references %}
