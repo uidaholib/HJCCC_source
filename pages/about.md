@@ -24,7 +24,7 @@ The remainder of the ceramics featured on this digital collection are from the [
 
 ### Classification
 
-Many of the terms used to describe the ceramics in this collection are based on a classification system that relies on Japanese language terms. By incorporating Japanese terms for vessel forms and design concepts, HJCCC terminology attempts to match the way that the Japanese ceramics industry describes their products, and the way that Issei communities would have understood the vessels that are the focus of this collection. This classification system was developed in collaboration with Japanese ceramics expert Leland Bibb as part of a master's research project at the University of Idaho (Campbell 2017a, 2017b). It continues to grow with the input and assistance of other researchers. An abbreviated typology for ceramic forms can be seen on the [Forms page]({{ '/forms/' | relative_url }}), and full definitions of Japanese terms can be found in the HJCCC [Glossary]({{ '/resources/' | relative_url }}). 
+Many of the terms used to describe the ceramics in this collection are based on a classification system that relies on Japanese language terms. By incorporating Japanese terms for vessel forms and design concepts, HJCCC terminology attempts to match the way that the Japanese ceramics industry describes their products, and the way that Issei communities would have understood the vessels that are the focus of this collection. This classification system was developed in collaboration with Japanese ceramics expert Leland Bibb as part of a master's research project at the University of Idaho (Campbell 2017a, 2017b). It continues to grow with the input and assistance of other researchers. An abbreviated typology for ceramic forms can be seen on the [Forms page]({{ '/forms/' | relative_url }}), and full definitions of Japanese terms can be found in the HJCCC [Glossary]({{ '/glossary/' | relative_url }}). 
 
 Questions, suggestions, and comments are welcome at rjcampbell@uidaho.edu.
 
@@ -34,11 +34,11 @@ This research was supported in part by the University of Idaho’s John Calhoun 
 
 Priscilla Wegars, volunteer curator of the Asian American Comparative Collection at the University of Idaho Laboratory of Anthropology, served as peer reviewer for the collection. 
 Japanese ceramics experts Leland E. Bibb and Louise Allison Cort provided information and expertise invaluable to this research. 
-The information presented on these pages also owes a great deal to other researchers whose works are cited on the [Resources page]({{ '/resources/' | relative_url }}). 
+The information presented on these pages also owes a great deal to other researchers whose works are cited below. 
 
 ### Data
 
-The full descriptive metadata can be downloaded as a <a href="{{ "/data/metadata.csv" | absolute_url }}" target="_blank">CSV spreadsheet</a>, <a href="{{ "/data/metadata.json" | absolute_url }}" target="_blank">JSON</a>, or a <a href="{{ "/data/geodata.json" | absolute_url }}" target="_blank">GeoJSON</a> export.
+The full descriptive metadata can be downloaded as a <a href="{{ "/data/metadata.csv" | absolute_url }}" target="_blank">CSV spreadsheet</a> or <a href="{{ "/data/metadata.json" | absolute_url }}" target="_blank">JSON</a> export.
 The data can be subsetted and downloaded as CSV or Excel from the <a href="{{ "/data/" | relative_url }}" >data table</a>.
 
 ### Technical
@@ -53,7 +53,7 @@ Document metadata is exposed using [DCMI](http://dublincore.org/), [Schema.org](
 </div></div>
 {% include aboutsidebar.html %}
 </div><div markdown="1" class="row">
-<div markdown="1" class="col-md-12 pl-4">
+<div markdown="1" class="col-md-12">
 ## References Cited in the HJCCC
 
 {% for citation in site.data.references %}

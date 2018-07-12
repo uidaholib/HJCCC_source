@@ -38,7 +38,7 @@ gallery: true
                     <dd class="field-value">
                         {% if f.glossary-link == "true" %}
                         {% if glossary contains page[f.field] %}
-                        <a href="{{ page[f.field] | strip | slugify | append: '.html' | prepend: '/resources/' | absolute_url }}" >{{ page[f.field] }}</a>{% else %}{{ page[f.field] }}{% endif %}
+                        <a href="{{ page[f.field] | strip | slugify | append: '.html' | prepend: '/glossary/' | absolute_url }}" >{{ page[f.field] }}</a>{% else %}{{ page[f.field] }}{% endif %}
                         {% elsif f.field == "functional-category" %}<a href="{{ page[f.field] | strip | uri_escape | prepend: '/browse/#' | absolute_url }}" >{{ page[f.field] }}</a>
                         {% else %}{{ page[f.field] }}{% endif %}
                     </dd>
