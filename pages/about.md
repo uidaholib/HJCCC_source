@@ -49,6 +49,14 @@ Document metadata is exposed using [DCMI](http://dublincore.org/), [Schema.org](
 
 > *Last build date: {{ site.time | date: "%Y-%m-%d" }}*
 
+
 </div></div>
 {% include aboutsidebar.html %}
-</div>
+</div><div markdown="1" class="row">
+<div markdown="1" class="col-md-12">
+## References Cited
+
+{% for citation in site.data.references %}
+<p class="hangingindent">{{ citation.author }}. {{ citation.publication }}</p>
+{% endfor %}
+</div></div>

@@ -39,5 +39,5 @@ page_gen:
   - data: 'hjccc-glossary'
     template: 'terms'
     name: 'slug'
-    dir: 'resources'
+    dir: 'glossary'
     extension: 'html'    

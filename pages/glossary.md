@@ -1,10 +1,10 @@
 ---
-title: Resources
+title: Glossary
 layout: page
-permalink: /resources/
+permalink: /glossary/
 ---
 
-# Resources
+# Glossary
 
 This page contains a glossary of terms and a list of references cited in the HJCCC.
 Both are organized alphabetically.
@@ -14,14 +14,8 @@ Glossary terms describing elements present on HJCCC items link to examples along
 
 <dl>
     {% for item in site.data.hjccc-glossary %}
-    <dt class="glossary-def">{% if item.search %}<a href="{{ '/resources/' | append: item.slug | append: '.html' | relative_url }}">
+    <dt class="glossary-def">{% if item.search %}<a href="{{ '/glossary/' | append: item.slug | append: '.html' | relative_url }}">
     {{ item.term }}</a>{% else %}{{ item.term }}{% endif %}</dt>
     <dd>- {{ item.definition }}</dd>
     {% endfor %}
 </dl>
-
-## References Cited
-
-{% for citation in site.data.references %}
-<p class="hangingindent">{{ citation.author }}. {{ citation.publication }}</p>
-{% endfor %}

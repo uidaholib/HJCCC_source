@@ -4,23 +4,12 @@
 @charset "utf-8";
 
 // base variables
-$base-font-family: "Oswald", Verdana, Verdana, Geneva, sans-serif; 
-$base-font-size:   16px;
+$base-font-family: "Ringside Narrow A", "Ringside Narrow B", Arial, sans-serif; 
+$base-font-size:   19px;
 $base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$text-color:       #111;
-$background-texture: url(https://www.lib.uidaho.edu/digital/grey_wash_wall.png) repeat scroll;
-$background-color: #fdfdfd;
-$nav-background: #191919; //#CBCCD0;
-$light-text-color: #fdfdfd;
-
-$background-color: #fdfdfd;
-$nav-background: #e8e8e8; //#CBCCD0;
-$link-color:      #191919;
-
-$jumbotron-image: url('https://www.lib.uidaho.edu/images/U-Idaho_Library_Oct2_current.jpg');
 
 $grey-color:       #808080;
 $grey-color-light: lighten($grey-color, 40%);
@@ -39,6 +28,20 @@ $clearwater: #00AEC7;
 $clearwater-light: #8BD5E5;
 $payette-blue: #003E51;
 $ponderosa-pine: #004E42;
+
+$text-color:       #111;
+$background-texture: url(https://www.lib.uidaho.edu/digital/grey_wash_wall.png) repeat scroll;
+$background-color: #fdfdfd;
+$nav-background: #191919; //#CBCCD0;
+$light-text-color: #fdfdfd;
+
+$background-color: #fdfdfd;
+$nav-background: #e8e8e8; //#CBCCD0;
+$link-color:      $clearwater;
+
+$jumbotron-image: url('https://www.lib.uidaho.edu/images/U-Idaho_Library_Oct2_current.jpg');
+
+
 
 // Width of the content area
 $content-width:    1800px;
@@ -59,7 +62,7 @@ $on-laptop:        800px;
     }
 }
 
-@import "custom", "colors";
+@import "custom", "uidahofonts","colors";
 
 //@import "base";
 //@import "layout";
