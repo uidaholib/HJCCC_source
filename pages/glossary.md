@@ -4,6 +4,8 @@ layout: page
 permalink: /glossary/
 ---
 
+{% include glossary-nav.html %}
+
 # Glossary
 
 Technical terms and Japanese language phrases used in the HJCCC are presented here alphabetically.
@@ -16,3 +18,5 @@ Each term is defined and those that describe elements present on HJCCC items lin
     <dd>- {{ item.definition }}</dd>
     {% endfor %}
 </dl>
+
+
