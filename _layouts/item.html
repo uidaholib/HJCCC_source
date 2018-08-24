@@ -39,7 +39,7 @@ gallery: true
                         {% if f.glossary-link == "true" %}
                         {% if glossary contains page[f.field] %}
                         <a href="{{ page[f.field] | strip | slugify | append: '.html' | prepend: '/glossary/' | absolute_url }}" >{{ page[f.field] }}</a>{% else %}{{ page[f.field] }}{% endif %}
-                        {% elsif f.field == "functional-category" %}<a href="{{ page[f.field] | strip | uri_escape | prepend: '/browse/#' | absolute_url }}" >{{ page[f.field] }}</a>
+                        {% elsif f.field == "functional-category" %}<a href="{{ page[f.field] | strip | uri_escape | prepend: '/browse.html#' | absolute_url }}" >{{ page[f.field] }}</a>
                         {% else %}{{ page[f.field] }}{% endif %}
                     </dd>
                     {% endif %}{% endfor %}
@@ -53,7 +53,7 @@ gallery: true
                             {% assign facets = "functional-category;material;vessel-form" | split: ";" %}
                             <p>
                             {% for f in facets %}
-                                <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ page[f] | trim | uri_escape | prepend: "/browse/#" | relative_url }}">{{ page[f] }}</a> 
+                                <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ page[f] | trim | uri_escape | prepend: "/browse.html#" | relative_url }}">{{ page[f] }}</a> 
                             {% endfor %}
                             </p>
                         </div>
@@ -84,6 +84,6 @@ gallery: true
         </div>
     </div>
     <div class="text-center">
-        <a class="btn btn-secondary" href="{{ "/browse/" | relative_url }}" role="button">&laquo; Back to browse</a>
+        <a class="btn btn-secondary" href="{{ "/browse.html" | relative_url }}" role="button">&laquo; Back to browse</a>
     </div>
 </div>

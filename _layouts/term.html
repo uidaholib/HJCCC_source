@@ -16,7 +16,7 @@ gallery: true
             <div class="col-md-6" >
                 <h2>{{ page.term }}</h2>
                 <p>{{ page.definition }}</p>
-                <p><a class="btn btn-clearwater btn-lg" href="{{ '/browse/#' | append: page.search | relative_url }}">Browse Items</a></p>
+                <p><a class="btn btn-clearwater btn-lg" href="{{ '/browse.html#' | append: page.search | relative_url }}">Browse Items</a></p>
             </div>
             
             {% for item in objects %}

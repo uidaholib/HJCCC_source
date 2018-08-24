@@ -1,7 +1,7 @@
 ---
 title: About
 layout: page
-permalink: /about/
+permalink: /about.html
 ---
 <div markdown="1" class="row">
 <div markdown="1" class="col-md-8"><div markdown="1" class="py-3 px-4">
@@ -24,7 +24,7 @@ The remainder of the ceramics featured on this digital collection are from the [
 
 ### Classification
 
-Many of the terms used to describe the ceramics in this collection are based on a classification system that relies on Japanese language terms. By incorporating Japanese terms for vessel forms and design concepts, HJCCC terminology attempts to match the way that the Japanese ceramics industry describes their products, and the way that Issei communities would have understood the vessels that are the focus of this collection. This classification system was developed in collaboration with Japanese ceramics expert Leland Bibb as part of a master's research project at the University of Idaho (Campbell 2017a, 2017b). It continues to grow with the input and assistance of other researchers. An abbreviated typology for ceramic forms can be seen on the [Forms page]({{ '/forms/' | relative_url }}), and full definitions of Japanese terms can be found in the HJCCC [Glossary]({{ '/glossary/' | relative_url }}). 
+Many of the terms used to describe the ceramics in this collection are based on a classification system that relies on Japanese language terms. By incorporating Japanese terms for vessel forms and design concepts, HJCCC terminology attempts to match the way that the Japanese ceramics industry describes their products, and the way that Issei communities would have understood the vessels that are the focus of this collection. This classification system was developed in collaboration with Japanese ceramics expert Leland Bibb as part of a master's research project at the University of Idaho (Campbell 2017a, 2017b). It continues to grow with the input and assistance of other researchers. An abbreviated typology for ceramic forms can be seen on the [Forms page]({{ '/forms.html' | relative_url }}), and full definitions of Japanese terms can be found in the HJCCC [Glossary]({{ '/glossary/' | relative_url }}). 
 
 Questions, suggestions, and comments are welcome at rjcampbell@uidaho.edu.
 
@@ -58,5 +58,5 @@ Document metadata is exposed using [DCMI](http://dublincore.org/), [Schema.org](
 
 {% for citation in site.data.references %}
 <p class="hangingindent">{{ citation.author }}. {{ citation.publication }}</p>
-{% endfor %}
-</div></div>
+{% endfor %}</div></div></div>
+

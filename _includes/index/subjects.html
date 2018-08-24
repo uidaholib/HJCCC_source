@@ -4,7 +4,7 @@
     {%- assign topSubjects = page.featured-subjects | split: "; " -%}
     <p class="card-text">
         {% for s in topSubjects %}
-        <a class="btn btn-sm btn-info m-1" href="{{ s | uri_escape | prepend: '/browse/#' | absolute_url }}">{{ s }}</a>{% endfor %}
+        <a class="btn btn-sm btn-info m-1" href="{{ s | uri_escape | prepend: '/browse.html#' | absolute_url }}">{{ s }}</a>{% endfor %}
     </p>
   </div>
 </div>

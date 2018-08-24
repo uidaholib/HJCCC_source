@@ -1,8 +1,8 @@
 display-text,stub
 Home,/
-Browse,/browse/
-Forms,/forms/
-Subjects,/subjects/
+Browse,/browse.html
+Forms,/forms.html
+Subjects,/subjects.html
 Glossary,/glossary/
 Timeline,/timeline/
-About,/about/
+About,/about.html

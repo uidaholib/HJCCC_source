@@ -93,3 +93,11 @@ dt {
 .card-title{
     font-size:1.5rem;
 }    
+.collection-list{
+    list-style: none;
+    padding-left:10px;
+    ul{
+       list-style: none;
+    padding-left:20px; 
+    }
+}
