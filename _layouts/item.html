@@ -20,11 +20,12 @@ gallery: true
                 <div>
                     <div class="gallery-img" data-src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg">
                         <img src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}_sm.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
+                        <p class="text-center"><small>Click to view full screen</small></p>
                     </div>
                 </div>
                 <div class="text-center my-2">
                     <p>{{ image.title }}</p>
-                    <a href="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg" target="_blank" class="btn btn-clearwater" title="image download">View Full Screen</a>
+                    <a href="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg" target="_blank" class="btn btn-clearwater" title="image download">Download Image</a>
                 </div>
             </div>
             {% endfor %}
