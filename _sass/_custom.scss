@@ -119,5 +119,11 @@ dt {
     margin: 0;
     font-weight: 300; }
   
-  #collectionslink p {
+#collectionslink p {
     margin: 0; }
+/* glossary */
+#glossary-list {
+    a {
+        text-decoration: underline;
+    }
+}

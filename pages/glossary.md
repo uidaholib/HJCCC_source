@@ -23,7 +23,7 @@ Each term is defined and those that describe elements present on HJCCC items lin
 {% for letter in uniqueLetters %}
 <h2 class="pt-4" id="{{ letter }}">{{ letter }}</h2>
 
-<dl>
+<dl id="glossary-list">
 {% for item in site.data.hjccc-glossary %}
 {%- assign x = item.term | slice: 0 | capitalize -%}
 {%- if x == letter -%}
