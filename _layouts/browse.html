@@ -18,7 +18,7 @@ layout: page
     {% for item in items %}
     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
     <div class="card" >
-        <a href="{{ "/data/" | absolute_url | append: item.object-id | append: ".html" }}">
+        <a href="{{ '/data/' | absolute_url | append: item.object-id | append: ".html" }}">
             {% assign images = site.data.hjccc-images | where: "object-id", item.object-id | first %}
             <img class="card-img-top lazy" {% if forloop.index < 20 %}src{% else %}data-original{% endif %}="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ images.identifier }}_th.jpg" alt="{{ item.title | escape }}">
         </a>
@@ -27,7 +27,7 @@ layout: page
             {% assign facets = "functional-category;material;vessel-form" | split: ";" %}
             <p>
             {% for f in facets %}
-                <a class="btn btn-sm btn-clearwater m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ item[f] | trim | uri_escape | prepend: "/browse.html#" | relative_url }}">{{ item[f] }}</a> 
+                <a class="btn btn-sm btn-clearwater m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ item[f] | trim | uri_escape | prepend: '/browse.html#' | relative_url }}">{{ item[f] }}</a> 
             {% endfor %} 
             </p>
 

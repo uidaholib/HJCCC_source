@@ -7,8 +7,8 @@ gallery: true
 
 <div class="container py-3">
     <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{ "/" | absolute_url }}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ "/data/" | absolute_url }}">Items</a></li>
+        <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ '/data/' | absolute_url }}">Items</a></li>
         <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
     </ul>
 
@@ -54,7 +54,7 @@ gallery: true
                             {% assign facets = "functional-category;material;vessel-form" | split: ";" %}
                             <p>
                             {% for f in facets %}
-                                <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ page[f] | trim | uri_escape | prepend: "/browse.html#" | relative_url }}">{{ page[f] }}</a> 
+                                <a class="btn btn-sm btn-secondary m-1 filter" data-filter="{{ item[f] | trim |escape }}" href="{{ page[f] | trim | uri_escape | prepend: '/browse.html#' | relative_url }}">{{ page[f] }}</a> 
                             {% endfor %}
                             </p>
                         </div>
@@ -85,6 +85,6 @@ gallery: true
         </div>
     </div>
     <div class="text-center">
-        <a class="btn btn-secondary" href="{{ "/browse.html" | relative_url }}" role="button">&laquo; Back to browse</a>
+        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">&laquo; Back to browse</a>
     </div>
 </div>
