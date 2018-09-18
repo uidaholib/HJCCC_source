@@ -10,11 +10,12 @@
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
+    color: $black-color;
 }
 a {
-    color: $link-color;
+    color: $clearwater;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     &:hover {
         color: $text-color;
         text-decoration: underline;

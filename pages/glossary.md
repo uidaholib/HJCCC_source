@@ -14,7 +14,7 @@ Each term is defined and those that describe elements present on HJCCC items lin
 
 <ul class="list-inline">
 {% for letter in uniqueLetters %}
-<li class="list-inline-item h2"><a class="clearwater" href="#{{ letter }}">{{ letter }}</a></li>
+<li class="list-inline-item h2"><a href="#{{ letter }}">{{ letter }}</a></li>
 {% endfor %}
 </ul>
 <hr>
@@ -27,7 +27,7 @@ Each term is defined and those that describe elements present on HJCCC items lin
 {% for item in site.data.hjccc-glossary %}
 {%- assign x = item.term | slice: 0 | capitalize -%}
 {%- if x == letter -%}
-    <dt class="glossary-def">{% if item.search %}<a class="clearwater" href="{{ '/glossary/' | append: item.slug | append: '.html' | relative_url }}">
+    <dt class="glossary-def">{% if item.search %}<a href="{{ '/glossary/' | append: item.slug | append: '.html' | relative_url }}">
     {{ item.term }}</a>{% else %}{{ item.term }}{% endif %}</dt> 
     <dd>- {{ item.definition }}</dd>
 {%- endif -%}
