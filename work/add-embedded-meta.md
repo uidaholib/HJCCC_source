@@ -15,6 +15,6 @@ IPTC:
 
 -Copyright=""
 -XMP:Source=""
--XMP:Rights=""
+-XMP:Rights=""exif
 
-`exiftool -
+exiftool -IPTC:Source="Burke Museum 45SN398B/2007" -XMP-dc:Source="Photo courtesy of the Burke Museum of Natural History and Culture, catalog nos. 45SN398B/2007, US Air Force Collection, held in trust at the Burke Museum, Seattle." *.jpg
