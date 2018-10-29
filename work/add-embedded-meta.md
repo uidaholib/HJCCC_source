@@ -17,4 +17,4 @@ IPTC:
 -XMP:Source=""
 -XMP:Rights=""exif
 
-exiftool -Copyright="Photo courtesy of the Burke Museum of Natural History and Culture, catalog nos. 45SN398B/2007, US Air Force Collection, held in trust at the Burke Museum, Seattle." -XMP-dc:Source="Photo courtesy of the Burke Museum of Natural History and Culture, catalog nos. 45SN398B/2007, US Air Force Collection, held in trust at the Burke Museum, Seattle." *.jpg
+exiftool -Title="Historical Japanese Ceramic Comparative Collection" -Copyright="Photo courtesy of the Burke Museum of Natural History and Culture, catalog nos. 45SN398B/2007, US Air Force Collection, held in trust at the Burke Museum, Seattle." -XMP-dc:Source="Photo courtesy of the Burke Museum of Natural History and Culture, catalog nos. 45SN398B/2007, US Air Force Collection, held in trust at the Burke Museum, Seattle." *.jpg
