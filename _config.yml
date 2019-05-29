@@ -16,6 +16,8 @@ url: https://www.lib.uidaho.edu
 #baseurl: /HJCCC_source
 baseurl: /digital/hjccc
 
+objects: https://www.lib.uidaho.edu/digital/objects/hjccc
+
 repo-url: https://digital.lib.uidaho.edu
 repo-collection-ids: HJCCC
 
