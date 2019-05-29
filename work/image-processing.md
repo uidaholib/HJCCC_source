@@ -1,4 +1,10 @@
-# create web images
+# Image standards
+
+Object photographs should be good quality, with a standard scale bar included in the image.
+Image file names should generally be based on the original museum identifier and must be safe for the web, thus should not include any spaces or odd characters.
+Access versions can be created from any quality image.
+
+# Create web access images
 
 using [graphicsmagick](http://www.graphicsmagick.org/) create derivatives from HJCCC images "access jpg" (were 14000px wide):
 
