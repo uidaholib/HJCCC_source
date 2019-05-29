@@ -3,7 +3,7 @@ layout: default
 gallery: true
 ---
 {%- assign fields = site.data.metadata-fields -%}
-{%- assign glossary = site.data.hjccc-glossary | map: "search" -%}
+{%- assign glossary = site.data.hjccc_glossary | map: "subject" -%}
 
 <div class="container py-3">
     <ul class="breadcrumb">
@@ -14,7 +14,7 @@ gallery: true
 
     <div class="row">
         <div class="col-md-3" id="lightgallery" >
-            {% assign images = site.data.hjccc-images | where: "object-id", page.object-id %}
+            {% assign images = site.data.hjccc_images | where: "object-id", page.object-id %}
             {% for image in images %}
             <div class="card mb-2">
                 <div>

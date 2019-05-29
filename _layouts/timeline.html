@@ -23,7 +23,7 @@ layout: page
     <th><h3 id="{{ era | slugify }}">{{ era }}</h2></th>
     <td>
     {% for item in items %}{% if item.timeline-era contains era %}
-    {% assign images = site.data.hjccc-images | where: "object-id", item.object-id | first %}
+    {% assign images = site.data.hjccc_images | where: "object-id", item.object-id | first %}
     <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazy img-thumbnail m-1" data-original="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ images.identifier }}_th.jpg" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.manufacture-range }}"></a>
     {% endif %}{% endfor %}
     </td>

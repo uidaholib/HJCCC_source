@@ -2,7 +2,7 @@
 layout: default
 gallery: true
 ---
-{% assign objects = site.data.hjccc-objects %}
+{% assign objects = site.data.hjccc_objects %}
 
 <div class="container py-3">
 
@@ -18,12 +18,12 @@ gallery: true
                 <h2>{{ page.term }}</h2>
                 <p>{{ page.definition }}</p>
                 <p><a class="btn btn-clearwater btn-lg" id="gallery-open">View Gallery</a>
-                    <a class="btn btn-outline-secondary btn-lg ml-2" href="{{ '/browse.html#' | append: page.search | relative_url }}">Browse Records</a></p>
+                    <a class="btn btn-outline-secondary btn-lg ml-2" href="{{ '/browse.html#' | append: page.subject | relative_url }}">Browse Records</a></p>
             </div>
             
             {% for item in objects %}
-            {% if item.subjects contains page.search %}
-            {% assign image = site.data.hjccc-images | where: "object-id", item.object-id | first %}
+            {% if item.subjects contains page.subject %}
+            {% assign image = site.data.hjccc_images | where: "object-id", item.object-id | first %}
             <div class="col-6 col-md-3">
                 <div class="card mb-2">
                     <div>

@@ -1,4 +1,4 @@
-{%- assign carousel-items = site.data.hjccc-images -%}
+{%- assign carousel-items = site.data.hjccc_images -%}
 <script> 
     var carouselItems = [ {% for c in carousel-items %}{ "object": "{{ c.object-id }}", "id": "{{ c.identifier }}" }{% unless forloop.last %}, {% endunless %}{% endfor %}];
     var carousel = document.getElementById("carouselInner");

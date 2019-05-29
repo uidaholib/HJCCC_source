@@ -1,6 +1,6 @@
 ---
 # create CDM api links to grab all images 
 ---
-{%- for item in site.data.hjccc-images -%}
+{%- for item in site.data.hjccc_images -%}
 https://digital.lib.uidaho.edu/utils/ajaxhelper/?CISOROOT=HJCCC&CISOPTR={{ item.cdm-number }}&action=2&DMSCALE=100&DMWIDTH=9000&DMHEIGHT=9000&DMX=0&DMY=0&DMTEXT=&DMROTATE=0
 {% endfor %}
