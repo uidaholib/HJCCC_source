@@ -8,6 +8,7 @@ title: Historical Japanese Ceramic Comparative Collection
 tagline: "Japanese ceramics from archaeological sites in the American West"
 description: "The Historical Japanese Ceramic Comparative Collection (HJCCC) contains digital photographs and resources for identifying and describing Japanese ceramics manufactured during the Meiji and Taisho eras..."
 keywords: university of idaho, HJCCC, digital collections
+author: evanwill # You! Add your github username
 email: ewilliamson@uidaho.edu
 
 # url variables
@@ -15,7 +16,9 @@ email: ewilliamson@uidaho.edu
 url: https://www.lib.uidaho.edu
 #baseurl: /HJCCC_source
 baseurl: /digital/hjccc
-
+# url to the shared assets folder on Digital
+digital-assets: https://www.lib.uidaho.edu/digital/assets
+# Collection's objects dir location
 objects: https://www.lib.uidaho.edu/digital/objects/hjccc
 
 repo-url: https://digital.lib.uidaho.edu
@@ -23,17 +26,13 @@ repo-collection-ids: HJCCC
 
 jumbotron-image: /objects/aacc-bowls-4-center-crop4.jpg
 
-
-#style with Bootswatch
-bstheme: # leave blank or comment out for plain bootstrap
-
 # Dev variables: 
 # choose metadata set, i.e. easily switch between full or dev version
 # be sure to also change page_gen data setting!
 metadata: hjccc_objects
 
 # collection display variables 
-# see _data/metadata-fields.csv
+# see _data/metadata-config.csv
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:

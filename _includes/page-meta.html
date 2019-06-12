@@ -1,10 +1,13 @@
-<meta name="author" content="{{ site.owner }}" >
-<meta name="keywords" content="{{ site.keywords }}" >
-<meta name="description" content="{{ site.description }}">
-
-<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
-<meta property="og:description" content="{{ site.description }}" />
-<meta property="og:site_name" content="{{ site.title }}" />
+<meta name="keywords" content="{{ site.keywords | escape }}" >
+<meta name="description" content="{{ site.description | escape }}">
+<meta name="author" content="{{ site.author | escape }}" >
+<!-- Open Graph meta -->
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}" />
+<meta property="og:description" content="{{ site.description | escape }}" />
+<meta property="og:site_name" content="{{ site.title | escape }}" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="{{ site.home-banner-image-link }}" />
+<meta property="og:image:alt" content="{{ site.home-banner-image-title }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}","author":{"@type":"Person","name":"{{ site.author }}"},"description":"{{ site.description }}","url":"{{ page.url | absolute_url }}"}</script> 
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}","author":{"@type":"Person","name":"{{ site.author | escape }}"},"publisher":"University of Idaho Library","description":"{{ site.description | escape }}","image":"{{ site.home-banner-image-link }}","url":"{{ page.url | absolute_url }}"}</script> 
