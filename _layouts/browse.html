@@ -20,7 +20,7 @@ layout: page
     <div class="card" >
         <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}">
             {% assign images = site.data.hjccc_images | where: "object-id", item.object-id | first %}
-            <img class="card-img-top lazy" {% if forloop.index < 20 %}src{% else %}data-original{% endif %}="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ images.identifier }}_th.jpg" alt="{{ item.title | escape }}">
+            <img class="card-img-top lazy" {% if forloop.index < 20 %}src{% else %}data-original{% endif %}="{{ site.objects }}/{{ images.identifier }}_th.jpg" alt="{{ item.title | escape }}">
         </a>
         <div class="card-body">
             <h4 class="card-title">{{ item.title }}</h4>

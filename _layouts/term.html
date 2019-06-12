@@ -27,8 +27,8 @@ gallery: true
             <div class="col-6 col-md-3">
                 <div class="card mb-2">
                     <div>
-                        <div class="gallery-img" data-src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg">
-                            <img src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}_th.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
+                        <div class="gallery-img" data-src="{{ site.objects }}/{{ image.identifier }}.jpg">
+                            <img src="{{ site.objects }}/{{ image.identifier }}_th.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
                         </div>
                     </div>
                     <div class="text-center my-2">

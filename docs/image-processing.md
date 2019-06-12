@@ -14,4 +14,4 @@ using [graphicsmagick](http://www.graphicsmagick.org/) create derivatives from H
 
 `for f in *.jpg; do gm convert "$f" -resize 800x800 -flatten "${f%.jpg}_sm.jpg"; done`
 
-These live at https://www.lib.uidaho.edu/digital/hjccc/objects/
+These live at site.objects

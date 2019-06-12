@@ -18,14 +18,14 @@ gallery: true
             {% for image in images %}
             <div class="card mb-2">
                 <div>
-                    <div class="gallery-img" data-src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg">
-                        <img src="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}_sm.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
+                    <div class="gallery-img" data-src="{{ site.objects }}/{{ image.identifier }}.jpg">
+                        <img src="{{ site.objects }}/{{ image.identifier }}_sm.jpg" alt="{{ image.title | escape }}" alt="item thumbnail" class="img-fluid">
                         <p class="text-center"><small>Click to view full screen</small></p>
                     </div>
                 </div>
                 <div class="text-center my-2">
                     <p>{{ image.title }}</p>
-                    <a href="https://www.lib.uidaho.edu/digital/hjccc/objects/{{ image.identifier }}.jpg" target="_blank" class="btn btn-outline-clearwater" title="image download">Download Image</a>
+                    <a href="{{ site.objects }}/{{ image.identifier }}.jpg" target="_blank" class="btn btn-outline-clearwater" title="image download">Download Image</a>
                 </div>
             </div>
             {% endfor %}
