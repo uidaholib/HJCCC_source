@@ -17,7 +17,7 @@ url: https://www.lib.uidaho.edu
 #baseurl: /HJCCC_source
 baseurl: /digital/hjccc
 # url to the shared assets folder on Digital
-digital-assets: https://www.lib.uidaho.edu/digital/assets
+digital-assets: https://www.lib.uidaho.edu/assets
 # Collection's objects dir location
 objects: https://www.lib.uidaho.edu/digital/objects/hjccc
 
@@ -46,3 +46,5 @@ page_gen:
     name: 'slug'
     dir: 'glossary'
     extension: 'html'    
+
+exclude: [docs, work, 'Rakefile']
