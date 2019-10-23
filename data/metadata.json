@@ -2,7 +2,7 @@
 # metadata for table ajax
 ---
 {%- assign items = site.data[site.metadata] -%}
-{ "documents": [
+{ "objects": [
     {%- for item in items -%}
     {
         "title": {{ item.title | jsonify }},
