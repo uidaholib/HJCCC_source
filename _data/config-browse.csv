@@ -1,0 +1,19 @@
+field,displayName,btn,hidden
+functional-category,,true,
+material,,true,
+vessel-form,,true,
+decoration-type,,true,
+description,Description,
+source,Source,
+catalog-number,Catalog Number,
+site-location,,,true
+site-date,,,true
+artifact-dimensions,,,true
+pigment-application,,,true
+exterior-decoration-method,,,true
+exterior-decoration-color,,,true
+exterior-decoration-elements,,,true
+interior-decoration-method,,,true
+interior-decoration-color,,,true
+interior-decoration-elements,,,true
+marks,,,true

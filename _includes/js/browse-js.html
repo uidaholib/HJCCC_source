@@ -1,76 +1,124 @@
-<script src="{{ '/js/jquery.lazyload.js' | prepend: site.digital-assets }}"></script>
+{%- assign items = site.data[site.metadata] -%}
+{%- assign fields = site.data.config-browse -%}
 <script>
-  var $imgs = $("img.lazy");
-  // Lazy Load images when they appear in DOM
-  $imgs.lazyload({ 
-        effect: "fadeIn",
-        failure_limit: Math.max($imgs.length - 1, 0)
-  });
 
-  function filterItems() {
-    var input, filter, table, tr, td, i;
-    input = document.getElementById("quicksearch");
-    filter = input.value.toUpperCase();
-    itemcontainer = document.getElementById("browse-items");
-    item = itemcontainer.getElementsByTagName("div");
-    for (i = 0; i < item.length; i++) {
-      itemcontents = item[i].getElementsByTagName("div")[0];
-      if (itemcontents) {
-        if (itemcontents.innerHTML.toUpperCase().indexOf(filter) > -1) {
-          item[i].style.display = "";
-        } else {
-          item[i].style.display = "none";
-        }
-      }       
+function makeCard(obj) {
+  // item link
+  var itemHref = "{{ '/data/' | relative_url }}" + obj.id + ".html";
+  // item src 
+  var itemSrc = '{{ site.objects }}/' + obj.img + '_th.jpg';
+  // start card
+  var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2"><div class="card">';
+  card += '<a target="_blank" href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + itemSrc + '" alt="Image of ' + obj.title + '"></a>';
+  // title
+  card += '<div class="card-body"> <h3 class="card-title"><a target="_blank" href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
+  // other fields
+  card += '<p class="card-text">';
+  {% assign btns = fields | where: "btn","true" %}
+  var btns = {% for b in btns %}obj[{{ b.field | jsonify }}] {% unless forloop.last %}+ ";" + {% endunless %}{% endfor %};
+  btns = btns.split(";");
+  for (var i = 0, len = btns.length; i < len; i++) {
+    if(btns[i] != "") {
+      card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(btns[i]) + '">' + btns[i] + '</a>';
     }
-    var numberofint = $('div.card:visible').length;
-    $("#numberof").html(numberofint);
   }
+  card += '</p><p class="card-text">';
+  {% for f in fields %}{% unless f.hidden == 'true' or f.btn == 'true' %}
+  if(obj[{{ f.field | jsonify }}]){
+  {% if f.displayName %}card += '<strong>{{ f.displayName }}:</strong> ';{% endif %}
+  card += obj[{{ f.field | jsonify }}];
+  {% unless forloop.last %}card += '<br>';{% endunless %}
+  }
+  {% endunless %}{% endfor %}
+  card += '</p>';
+  // view button
+  card += '<hr><a target="_blank" href="' + itemHref + '" class="btn btn-sm btn-outline-clearwater" title="link to ' + obj.title + '">View Full Record</a>';
+  // close divs
+  card += '</div></div></div>';
+  // send back big string
+  return card;
+}
 
-  // filter items by entering value of button or link pushed into quicksearch box
-  var filterit = function() {
-    $('#quicksearch').val('');
-    $(this).addClass('active');
-    $('a.filter').not(this).removeClass('active');
-      var filterValue = $(this).attr('data-filter');
-      var filterClass = $(this).attr('data-filter').replace(" ","-").replace(" ","-");
-    $('#quicksearch').val($('#quicksearch').val() + filterValue);
-    $('#goButton').click();
-        window.location.hash = filterValue; 
-      var filterValueclass = "." + filterClass;
-    $(filterValueclass).addClass('active');
-    $imgs.lazyload();
-  };
-  // run filterit function when link/button with class filter clicked
-  $('a.filter').click(filterit);
+/* Fisher-Yates shuffle https://bost.ocks.org/mike/shuffle/ */
+function shuffle(array) {
+  var m = array.length, t, i;
+  while (m) {
+  i = Math.floor(Math.random() * m--);
+  t = array[m];
+  array[m] = array[i];
+  array[i] = t;
+  }
+  return array;
+}
+    
+/* add items */
+var items = [
+  {% for i in items %}{% assign image = site.data.hjccc_images | where: "object-id", i.object-id | first %}
+  { "title":{{ i.title | strip | jsonify }}, {% for f in fields %}{% if i[f.field] %}{{ f.field | jsonify }}:{{ i[f.field] | strip | truncatewords: 20 | jsonify }},{% endif %}{% endfor %} "img":{{ image.identifier | jsonify }}, "id":{{ i.object-id | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+];
+/* randomize items once at page load */
+shuffle(items);
 
-  // trigger imgs to lazy load upon click of go button
-  $('#goButton').click( function() {
-    $imgs.lazyload();
-  });
-
-  // click goButton to search if return pressed in search box
-  $('#quicksearch').keypress(function(e){
-    if(e.which == 13){//Enter key pressed
-        $('#goButton').click();
-        $imgs.lazyload();
-        //Trigger search button click event
+function filterItems(arr,q) {
+  // dont filter if no q 
+  if (q=="") { 
+    var filteredItems = arr; 
+  } else {
+    q = q.toUpperCase(); 
+    // for compatible indexOf loop?
+    var filteredItems = [];
+    for (var i = 0, len = arr.length; i < len; i++) {
+      var val = "";
+      for (var k in arr[i]) { val += arr[i][k]; }
+      if(val.toUpperCase().indexOf(q) != -1){
+        filteredItems.push(arr[i]);
       }
-  });
-
-  // get hash from url
-  var hashfilter = location.hash.substr(1).replace(/%20/g, " ");
-  var hashfilterclass = "." + location.hash.substr(1).replace("%20","-").replace("%20","-").replace("%20","-").replace(" ","-").replace(" ","-").replace(" ","-"); 
-
-  $(document).ready(function() {
-    $("#quicksearch").focus();
-    if(window.location.hash) {
-    // code to be executed if a hash is contained in the url
-    $('#quicksearch').val($('#quicksearch').val() + hashfilter);
-    $('#goButton').click();
-    $(hashfilterclass).addClass('active');
-    $imgs.lazyload();
     }
-    else{ }
-  });
+  }
+  // add number 
+  $("#numberOf").html(filteredItems.length);
+  // add stuff, make cards first in giant var, then add all at once to speed things up
+  
+  var cards = "";
+  for (var i = 0, len = filteredItems.length; i < len; i++) {
+    cards += makeCard(filteredItems[i]);
+  }
+  $("#browseItems").html(cards);
+
+  // finish
+  $("#goButton").focus();
+  $("#loading").hide();
+};
+
+var query = "";
+/* filter if hash in initial URL */
+if(window.location.hash) {
+  query = decodeURIComponent(location.hash.substr(1));
+  $('#quickSearch').val(query);
+  filterItems(items,query);
+} else {
+  query = "";
+  filterItems(items,query);
+}
+/* add hash if search button clicked */ 
+$('#goButton').click( function() {
+  window.location.hash = encodeURIComponent($('#quickSearch').val());
+});
+/* add hash if if enter is pressed */
+$('#quickSearch').keypress(function(e){
+  if(e.which == 13){
+      window.location.hash = encodeURIComponent($('#quickSearch').val());
+    }
+});
+/* filter if hash changes */ 
+$(window).on("hashchange", function() {
+  // show spinner
+  $("#loading").show();
+  // read hash
+  query = decodeURIComponent(location.hash.substr(1));
+  $('#quickSearch').val(query);
+  // filter
+  filterItems(items,query);
+});
+
 </script>
