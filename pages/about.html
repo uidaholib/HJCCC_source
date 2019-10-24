@@ -66,9 +66,9 @@ permalink: /about.html
     <div class="col-md-12">
 
         <h2>References Cited in the HJCCC</h2>
-
-        {% for citation in site.data.references %}
-        <p class="hangingindent">{{ citation.author }}. {{ citation.publication }}</p>
+        {%- assign citations = site.data.references | sort: "author" %}
+        {% for c in citations %}
+        <p class="hangingindent">{{ c.author }}. {{ c.publication }}</p>
         {% endfor %}
     
     </div>
