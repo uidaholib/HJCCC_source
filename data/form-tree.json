@@ -162,7 +162,7 @@
                   "Category": "Tableware",
                   "Type": "Other",
                   "Form": "",
-                  "name": "Shoyu Sashi (spouted jar)",
+                  "name": "Shoyu Sashi (soy sauce dispenser)",
                   "Description": "A small spouted jar or jug used to serve shoyu, or soy sauce (Simpson et al. 2015:89).",
                   "url": "{{ '/glossary/shoyu-sashi.html' | relative_url }}"
                 }
