@@ -8,7 +8,7 @@ permalink: /glossary/
 
 Technical and Japanese language terms used in the HJCCC are presented here alphabetically.
 Each term is defined here and those that describe elements present on HJCCC items will link to examples along with the term definition. 
-For full citations for works cited can be found on the About page.
+For full citations for works cited can be found on the [About page]({{ '/about.html' | relative_url }}).
 
 {% capture letters %}{% for item in site.data.hjccc_glossary %}{{ item.term | slice: 0 | capitalize }};{% endfor %}{% endcapture %}
 {%- assign uniqueLetters = letters | split: ';' | uniq -%}
