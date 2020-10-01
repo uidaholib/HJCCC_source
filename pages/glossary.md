@@ -11,7 +11,7 @@ Each term is defined here and those that describe elements present on HJCCC item
 For full citations for works cited can be found on the [About page]({{ '/about.html' | relative_url }}).
 
 {% capture letters %}{% for item in site.data.hjccc_glossary %}{{ item.term | slice: 0 | capitalize }};{% endfor %}{% endcapture %}
-{%- assign uniqueLetters = letters | split: ';' | uniq -%}
+{%- assign uniqueLetters = letters | split: ';' | uniq | sort -%}
 {%- assign glossary = site.data.hjccc_glossary | sort: "term" -%}
 
 <ul class="list-inline">
