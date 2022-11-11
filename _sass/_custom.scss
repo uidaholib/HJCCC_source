@@ -37,22 +37,8 @@ a {
     color: darken($link-color, 25%);
     text-decoration: underline;
 }
-nav, footer {
-    background: $nav-background;
-}
 
-/** all Collections nav **/
-.ijclist{
-    padding-left:0px;
-}
-#ijclink{
-    font-size:13px !important;
-    margin-left:20px;
-}
-.hangingindent {
-    padding-left: 22px ;
-    text-indent: -22px ;
-}
+
 
 /* item page */
 .gallery-img {
@@ -115,4 +101,8 @@ dt {
     a {
         text-decoration: underline;
     }
+}
+
+.text-underline {
+    text-decoration: underline;
 }
