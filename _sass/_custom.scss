@@ -1,12 +1,4 @@
 /* base */
-/*body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    font-weight: $base-font-weight;
-    line-height: $base-line-height;
-    color: $text-color;
-    background: $background-color;
-}*/
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -15,7 +7,6 @@ body {
 a {
     color: $clearwater;
     text-decoration: none;
-    font-weight: normal;
     &:hover {
         color: $text-color;
         text-decoration: underline;
@@ -24,8 +15,6 @@ a {
 /* banner */
 #title {
     a { 
-        font-size: 32px;
-        font-weight: 300;
         color: $text-color;
     }
     h1 {
@@ -86,7 +75,6 @@ dt {
 }
 .nav-link {
     font-size: 20px !important;
-    font-weight: 300 !important;
 }
 .jumbo-text{
     background:rgba(171, 167, 167, 0.0);
@@ -118,7 +106,7 @@ dt {
     padding: 5px 20px;
     border-bottom: 1px #dadada solid;
     margin: 0;
-    font-weight: 300; }
+}
   
 #collectionslink p {
     margin: 0; }
